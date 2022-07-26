@@ -27,8 +27,10 @@
 .section-two {
     @include mixins.flex-box(center, center, row, nowrap);
     gap: 2em;
+background-color: green;
 }
 
 .section-two-right {
     width:50%;
+    background: url("images/farmers-image.jpeg") no-repeat center center/contain cover;
 }

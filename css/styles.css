@@ -14,16 +14,21 @@ body {
   font-family: "Uchen", serif;
 }
 
-.navigation-bar ul {
+.navigation-bar ul, .footer-list-item ul, .icons__ul--li ul, .footer__section--page {
   list-style-type: none;
 }
 
+
 .navigation-bar button, .hero-section button {
+
+.navigation-bar button {
+
   cursor: pointer;
   padding: 0.8em 2em;
 }
 
-.navigation-bar-left .navbar-left-logo {
+.navigation-bar-left .navbar-left-logo, .logo img {
+
   width: 50%;
   border-radius: 50%;
   background-color: transparent;
@@ -55,10 +60,12 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 2em;
+  background-color: green;
 }
 
 .section-two-right {
   width: 50%;
+
 }
 
 .hero-section {
@@ -83,6 +90,39 @@ body {
 }
 .hero-section button:hover {
   background-color: white;
+
+  background: url("images/farmers-image.jpeg") no-repeat center center/contain cover;
+}
+
+.icons__ul--li ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2em;
+}
+
+.footer__section--page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 4em 0;
+  background-color: green;
+  color: yellow;
+  font-weight: 700;
+}
+.footer__section--page ul {
+  cursor: pointer;
+}
+.footer__section--page ul :hover {
+  color: white;
+}
+.footer__section--page ul :hover li {
+  padding: 3em 0;
+
 }
 
 .navigation-bar {
@@ -124,4 +164,9 @@ a:hover {
 }
 .navigation-bar ul li:hover {
   color: white;
+}
+
+.hero-section h1 {
+  font-family: "Roboto", sans-serif;
+
 }/*# sourceMappingURL=styles.css.map */
