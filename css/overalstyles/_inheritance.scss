@@ -1,5 +1,16 @@
 
-
+@use "./variables" as *;
 %listitems{
     list-style-type: none;
+}
+
+%button{
+    cursor: pointer;
+    padding:.8em 2em;
+}
+%company-logo{
+    width: 50%;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px 2px $yellow;
 }
