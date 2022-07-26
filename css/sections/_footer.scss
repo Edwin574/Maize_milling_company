@@ -1,0 +1,20 @@
+@use "../overalstyles/mixins";
+@use "../overalstyles/inheritance";
+@use "../overalstyles/variables" as *;
+
+.logo{
+    img{
+        @extend %company-logo;
+    }
+}
+.footer-list-item{
+    li{
+        @extend %listitem;
+    }
+}
+.icons{
+    li{
+        @extend %listitem;
+        
+    }
+}
