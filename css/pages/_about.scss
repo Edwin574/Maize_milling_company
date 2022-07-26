@@ -1,0 +1,7 @@
+@use"../overalstyles/mixins";
+.myheading{
+    color: red;
+}
+.about-vission{
+    @include mixins.flex-box(space-between,center,row,nowrap);
+}

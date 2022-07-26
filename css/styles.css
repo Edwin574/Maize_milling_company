@@ -69,6 +69,7 @@ body {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
+  background-color: #006400;
   padding: 3em 0em;
 }
 .section-one .--card-one {
@@ -199,4 +200,16 @@ a:hover {
 }
 .navigation-bar ul li:hover {
   color: white;
+}
+
+.myheading {
+  color: red;
+}
+
+.about-vission {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }/*# sourceMappingURL=styles.css.map */
