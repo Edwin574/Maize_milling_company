@@ -1,12 +1,48 @@
 @use "../overalstyles/inheritance";
+@use "../overalstyles/mixins";
 @use "../overalstyles/variables" as *;
 
-
-.navigation-bar ul{
-    @extend %listitems;
-}
-.hero-section{
-    h1{
-        font-family: $headingfont;
+.navigation-bar {
+  color: $yellow;
+  background-color: $green;
+  .navbar-flex{
+    @include mixins.flex-box(space-between, center, row, nowrap);
+    font-weight: 800;
+  }
+  button{
+    @extend %button;
+    border-radius: 20px;
+    border:none;
+    background-color: $yellow;
+    &:hover{
+        background-color:rgb(255,255,0.7)	
+        ;
     }
+  }
+  
+}
+a{
+    color:$yellow;
+    text-decoration: none;
+    &:hover{
+        color: $white;
+    }
+}
+.navigation-bar ul {
+  @extend %listitems;
+  @include mixins.flex-box(space-between, center, row, nowrap);
+  gap: 1em;
+  li:hover{
+    color: $white;
+  }
+}
+.navigation-bar-left {
+  .navbar-left-logo {
+    @extend %company-logo;
+  }
+}
+.hero-section {
+  h1 {
+    font-family: $headingfont;
+  }
 }
