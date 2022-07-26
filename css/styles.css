@@ -18,7 +18,7 @@ body {
   list-style-type: none;
 }
 
-.navigation-bar button, .hero-section button {
+.navigation-bar button, .hero-section button, .section-one .--card-one button {
   cursor: pointer;
   padding: 0.8em 2em;
 }
@@ -69,25 +69,38 @@ body {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #006400;
+  padding: 3em 0em;
 }
-.section-one .section-one-card-one {
+.section-one .--card-one {
   text-align: center;
   background-color: #FFDF2B;
   box-shadow: 2px 2px 2px black;
   border-radius: 10px;
+  padding: 2em;
 }
-.section-one .section-one-card-one img {
+.section-one .--card-one img {
   width: 50%;
   height: 50%;
 }
-.section-one .section-one-card-one h3 {
+.section-one .--card-one h3 {
   font-size: 1.8rem;
 }
-.section-one .section-one-card-one p {
+.section-one .--card-one p {
   font: 1.6rem;
   color: #158A43;
   font-weight: bolder;
+}
+.section-one .--card-one button {
+  width: 90%;
+  border-radius: 10px;
+  background-color: #158A43;
+  color: white;
+  margin: 2.8em 0em;
+  padding: 1em 0.5em;
+}
+.section-one .--card-one button:hover {
+  background-color: #FFDF2B;
+  color: #158A43;
 }
 
 .hero-section {

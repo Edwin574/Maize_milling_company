@@ -5,12 +5,14 @@
 
 .section-one{
     @include mixins.flex-box(space-around,center,row,wrap);
-    background-color: $primarycolor;
-    .section-one-card-one{
+    // background-color: $primarycolor;
+    padding: 3em 0em;
+    .--card-one{
         text-align: center;
         background-color: $yellow;
         box-shadow: 2px 2px 2px black;
         border-radius: 10px;
+        padding: 2em;
 
         img{
             width: 50%;
@@ -24,6 +26,19 @@
             font: 1.6rem;
             color: $green;
             font-weight: bolder;
+        }
+        button{
+            @extend %button;
+            width: 90%;
+            border-radius: 10px;
+            background-color: $green;
+            color:$white;
+            margin: 2.8em 0em;
+            padding: 1em .5em;
+            &:hover{
+                background-color: $yellow;
+                color: $green;
+            }
         }
 
     }
