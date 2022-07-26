@@ -1,3 +1,30 @@
-.hero-section{
-    background: url("../../images/hero-bg.jpg") no-repeat center center/cover ;
+@use "../overalstyles/inheritance";
+@use "../overalstyles/variables" as *;
+
+.hero-section {
+    height: 80vh;
+    padding: 3em;
+    text-align: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .2)), url("../../images/hero-bg2.jpg") no-repeat center center/cover;
+
+    p {
+        color: $white;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-family: $headingfont;
+        font-size: 3rem;
+        color: $white;
+    }
+    button{
+        @extend %button;
+        margin-top: 60px;
+        background-color: $green;
+        color: $yellow;
+        &:hover{
+            background-color: $white;
+        }
+    }
 }

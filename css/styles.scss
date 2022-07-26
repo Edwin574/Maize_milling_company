@@ -4,8 +4,9 @@
 @use "overalstyles/variables";
 @use "overalstyles/inheritance";
 @use "overalstyles/mixins";
-@use "sections/mainSectiontwo";
 
+@use "sections/mainSectiontwo";
+@use"sections/hero";
 @use "sections/nav";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Uchen&display=swap');
