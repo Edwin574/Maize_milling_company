@@ -10,8 +10,65 @@
   margin: 0 auto;
 }
 
+body {
+  font-family: "Uchen", serif;
+}
+
 .navigation-bar ul {
   list-style-type: none;
+}
+
+.navigation-bar button {
+  cursor: pointer;
+  padding: 0.8em 2em;
+}
+
+.navigation-bar-left .navbar-left-logo {
+  width: 50%;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 2px 2px 2px 2px #FFDF2B;
+}
+
+.navigation-bar {
+  color: #FFDF2B;
+  background-color: #158A43;
+}
+.navigation-bar .navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-weight: 800;
+}
+.navigation-bar button {
+  border-radius: 20px;
+  border: none;
+  background-color: #FFDF2B;
+}
+.navigation-bar button:hover {
+  background-color: rgb(255, 255, 1);
+}
+
+a {
+  color: #FFDF2B;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+
+.navigation-bar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1em;
+}
+.navigation-bar ul li:hover {
+  color: white;
 }
 
 .hero-section h1 {

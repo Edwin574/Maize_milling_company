@@ -1,3 +1,5 @@
+@use "../overalstyles/variables" as *;
+
 *{
     margin:0px;
     padding: 0px;
@@ -6,4 +8,7 @@
 .container{
     width: 90%;
     margin: 0 auto;
+}
+body{
+    font-family: $bodyfont;
 }
