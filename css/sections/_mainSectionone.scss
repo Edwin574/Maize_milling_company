@@ -1,0 +1,30 @@
+@use "../overalstyles/inheritance";
+@use "../overalstyles/mixins";
+@use "../overalstyles/variables" as *;
+
+
+.section-one{
+    @include mixins.flex-box(space-around,center,row,wrap);
+    background-color: $primarycolor;
+    .section-one-card-one{
+        text-align: center;
+        background-color: $yellow;
+        box-shadow: 2px 2px 2px black;
+        border-radius: 10px;
+
+        img{
+            width: 50%;
+            height: 50%;
+            
+        }
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            font: 1.6rem;
+            color: $green;
+            font-weight: bolder;
+        }
+
+    }
+}
