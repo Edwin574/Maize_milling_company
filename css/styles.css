@@ -18,12 +18,17 @@ body {
   list-style-type: none;
 }
 
+
+.navigation-bar button, .hero-section button {
+
 .navigation-bar button {
+
   cursor: pointer;
   padding: 0.8em 2em;
 }
 
 .navigation-bar-left .navbar-left-logo, .logo img {
+
   width: 50%;
   border-radius: 50%;
   background-color: transparent;
@@ -60,6 +65,32 @@ body {
 
 .section-two-right {
   width: 50%;
+
+}
+
+.hero-section {
+  height: 80vh;
+  padding: 3em;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../../images/hero-bg2.jpg") no-repeat center center/cover;
+}
+.hero-section p {
+  color: white;
+  font-size: 1.5rem;
+}
+.hero-section h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+.hero-section button {
+  margin-top: 60px;
+  background-color: #158A43;
+  color: #FFDF2B;
+}
+.hero-section button:hover {
+  background-color: white;
+
   background: url("images/farmers-image.jpeg") no-repeat center center/contain cover;
 }
 
@@ -91,6 +122,7 @@ body {
 }
 .footer__section--page ul :hover li {
   padding: 3em 0;
+
 }
 
 .navigation-bar {
@@ -136,4 +168,5 @@ a:hover {
 
 .hero-section h1 {
   font-family: "Roboto", sans-serif;
+
 }/*# sourceMappingURL=styles.css.map */
