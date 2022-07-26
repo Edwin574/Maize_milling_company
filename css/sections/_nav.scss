@@ -1,3 +1,12 @@
-ul{
+@use "../overalstyles/inheritance";
+@use "../overalstyles/variables" as *;
+
+
+.navigation-bar ul{
     @extend %listitems;
+}
+.hero-section{
+    h1{
+        font-family: $headingfont;
+    }
 }

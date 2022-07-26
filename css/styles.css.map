@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["overalstyles/_base.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;;AAEJ;EACI;EACA","file":"styles.css"}
+{"version":3,"sourceRoot":"","sources":["styles.scss","overalstyles/_base.scss","overalstyles/_inheritance.scss","sections/_nav.scss","overalstyles/_variables.scss"],"names":[],"mappings":"AASQ;ACTR;EACI;EACA;EACA;;;AAEJ;EACI;EACA;;;ACLJ;EACI;;;ACKA;EACI,aCFK","file":"styles.css"}

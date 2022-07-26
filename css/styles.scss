@@ -1,6 +1,10 @@
 
 
 @use "overalstyles/base";
-@use "overalstyles/_variables";
+@use "overalstyles/variables";
 @use "overalstyles/inheritance";
 @use "overalstyles/mixins";
+
+@use "sections/nav";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Uchen&display=swap');
