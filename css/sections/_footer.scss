@@ -2,19 +2,44 @@
 @use "../overalstyles/inheritance";
 @use "../overalstyles/variables" as *;
 
-.logo{
-    img{
+.logo {
+    img {
         @extend %company-logo;
+
     }
 }
-.footer-list-item{
-    li{
-        @extend %listitem;
+
+.footer-list-item {
+    ul {
+        @extend %listitems;
+       
     }
 }
-.icons{
-    li{
-        @extend %listitem;
-        
+
+.icons__ul--li{
+    ul {
+        @extend %listitems;
+        @include mixins.flex-box(center,center,row, nowrap);
+        gap:2em;
     }
+}
+
+.footer__section--page {
+    @include mixins.flex-box(space-around, center, row, nowrap);
+    @extend %listitems;
+    margin:4em 0;
+    background-color:green;
+    color:yellow;
+    font-weight: 700;
+    ul{
+        cursor: pointer;
+        & :hover{
+            color:white;
+            li{
+            padding:3em 0;}
+    }
+   
+    }
+
+
 }
