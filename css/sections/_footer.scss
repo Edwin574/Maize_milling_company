@@ -31,7 +31,9 @@
 .footer__section--page {
     @include mixins.flex-box(space-around, center, row, nowrap);
     @extend %listitems;
+
     background-color:$green;
+
     color:yellow;
     font-weight: 700;
     ul{

@@ -1,0 +1,12 @@
+@use"../overalstyles/mixins";
+.myheading{
+    color: red;
+}
+.about-company{
+    @include mixins.flex-box(space-between,center,row,nowrap);
+    .about--illustration{
+        border-radius: 30%;
+        width: 50%;
+        border: 2px solid black;
+    }
+}
