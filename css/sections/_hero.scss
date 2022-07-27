@@ -20,7 +20,8 @@
     }
     button{
         @extend %button;
-        margin:4em 0;
+        margin:4em 0em;
+
         background-color: $green;
         color: $yellow;
         font-size: 1.5rem;

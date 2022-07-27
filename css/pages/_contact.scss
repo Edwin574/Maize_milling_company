@@ -1,0 +1,54 @@
+@use "../overalstyles/inheritance";
+@use "../overalstyles/mixins";
+@use "../overalstyles/variables" as *;
+
+
+.contact-main-section{
+    font-weight: bolder;
+    color: white;
+    background:linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)),url("../../images/selling-background.jpg") no-repeat center center/cover;
+    
+}
+.contact-main-section--address {
+  @include mixins.flex-box(space-around, center, row, wrap);
+  .contact--physical-address {
+    text-align: center;
+    flex: 1;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .contact--reach-us {
+    flex: 1;
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.contact-main-section-form {
+    @include mixins.flex-box(center, center, row, wrap);
+    padding:5em 0em;
+    
+  form {
+    padding:2em;
+    width: 50%;
+    h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    label{
+        font-size: 1.5rem;
+    }
+    input{
+        padding: 1em;
+    }
+  }
+}

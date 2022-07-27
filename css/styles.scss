@@ -5,7 +5,12 @@
 @use "overalstyles/inheritance";
 @use "overalstyles/mixins";
 @use "./pages/selling-form";
+
+@use "./pages/shop";
+@use "./pages/contact";
+
 @use "./pages/signup";
+
 
 
 @use "sections/mainSectiontwo";
@@ -18,6 +23,7 @@
 @use "sections/nav";
 
 @use "./pages/about";
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Uchen&display=swap');
