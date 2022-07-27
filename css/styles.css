@@ -18,17 +18,12 @@ body {
   list-style-type: none;
 }
 
-
-.navigation-bar button, .hero-section button {
-
-.navigation-bar button {
-
+.navigation-bar button, .hero-section button, .section-one .--card-one button {
   cursor: pointer;
   padding: 0.8em 2em;
 }
 
 .navigation-bar-left .navbar-left-logo, .logo img {
-
   width: 50%;
   border-radius: 50%;
   background-color: transparent;
@@ -65,12 +60,53 @@ body {
 
 .section-two-right {
   width: 50%;
+  background: url("images/farmers-image.jpeg") no-repeat center center/contain cover;
+}
 
+.section-one {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #158A43;
+  padding: 3em 0em;
+}
+.section-one .--card-one {
+  text-align: center;
+  background-color: #FFDF2B;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 10px;
+  padding: 2em;
+}
+.section-one .--card-one img {
+  width: 50%;
+  height: 50%;
+}
+.section-one .--card-one h3 {
+  font-size: 1.8rem;
+}
+.section-one .--card-one p {
+  font: 1.6rem;
+  color: #158A43;
+  font-weight: bolder;
+}
+.section-one .--card-one button {
+  width: 90%;
+  border-radius: 10px;
+  background-color: #158A43;
+  color: white;
+  margin: 2.8em 0em;
+  padding: 1em 0.5em;
+}
+.section-one .--card-one button:hover {
+  background-color: #FFDF2B;
+  color: #158A43;
 }
 
 .hero-section {
   height: 80vh;
-  padding: 3em;
+  padding: 4em;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../../images/hero-bg2.jpg") no-repeat center center/cover;
 }
@@ -84,14 +120,15 @@ body {
   color: white;
 }
 .hero-section button {
-  margin-top: 60px;
+  margin-top: 10%;
   background-color: #158A43;
   color: #FFDF2B;
+  font-size: 1.5rem;
+  border-radius: 10px;
 }
 .hero-section button:hover {
-  background-color: white;
-
-  background: url("images/farmers-image.jpeg") no-repeat center center/contain cover;
+  background-color: #FFDF2B;
+  color: #006400;
 }
 
 .icons__ul--li ul {
@@ -109,7 +146,6 @@ body {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin: 4em 0;
   background-color: green;
   color: yellow;
   font-weight: 700;
@@ -122,7 +158,6 @@ body {
 }
 .footer__section--page ul :hover li {
   padding: 3em 0;
-
 }
 
 .navigation-bar {
@@ -134,7 +169,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   font-weight: 800;
 }
 .navigation-bar button {
@@ -166,7 +201,24 @@ a:hover {
   color: white;
 }
 
-.hero-section h1 {
-  font-family: "Roboto", sans-serif;
+@media screen and (max-width: 415px) {
+  .navigation-bar ul li {
+    display: none;
+  }
+}
+.myheading {
+  color: red;
+}
 
+.about-company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.about-company .about--illustration {
+  border-radius: 30%;
+  width: 50%;
+  border: 2px solid black;
 }/*# sourceMappingURL=styles.css.map */

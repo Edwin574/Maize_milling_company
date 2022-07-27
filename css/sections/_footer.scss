@@ -27,7 +27,6 @@
 .footer__section--page {
     @include mixins.flex-box(space-around, center, row, nowrap);
     @extend %listitems;
-    margin:4em 0;
     background-color:green;
     color:yellow;
     font-weight: 700;

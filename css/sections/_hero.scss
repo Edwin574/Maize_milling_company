@@ -3,7 +3,7 @@
 
 .hero-section {
     height: 80vh;
-    padding: 3em;
+    padding: 4em;
     text-align: center;
 
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .2)), url("../../images/hero-bg2.jpg") no-repeat center center/cover;
@@ -20,11 +20,14 @@
     }
     button{
         @extend %button;
-        margin-top: 60px;
+        margin-top: 10%;
         background-color: $green;
         color: $yellow;
+        font-size: 1.5rem;
+        border-radius: 10px;
         &:hover{
-            background-color: $white;
+            background-color: $yellow;
+            color: $primarycolor;
         }
     }
 }
