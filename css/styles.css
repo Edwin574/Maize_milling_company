@@ -18,7 +18,11 @@ body {
   list-style-type: none;
 }
 
+
 .navigation-bar button, .hero-section button, .section-one .--card-one button, .shop-container .shop-container-items .shop-advert button, button {
+
+.navigation-bar button, .hero-section button, .section-one .--card-one button, form button, .form button {
+
   cursor: pointer;
   padding: 0.8em 2em;
 }
@@ -49,16 +53,31 @@ label {
   border: none;
 }
 
+
 button {
+
+.form {
+  width: 50%;
+}
+.form form {
+  background-color: #158A43;
+  color: #FFDF2B;
+  width: 90%;
+  padding: 2em;
+  border-radius: 6px;
+}
+.form button {
+  width: 20%;
   border: none;
   border-radius: 10px;
   background-color: #FFDF2B;
   font-weight: bolder;
 }
-button:hover {
+.form button:hover {
   background-color: white;
   color: #158A43;
 }
+
 
 .form {
   width: 50%;
@@ -76,6 +95,7 @@ button:hover {
   border-radius: 6px;
 }
 
+
 .image {
   width: 50%;
 }
@@ -90,9 +110,9 @@ button:hover {
 
 .sections__selling--form {
   padding: 5em 0;
-  height: 75vh;
   background-color: #FFDF2B;
 }
+
 
 .sub-nav {
   border: 2px solid black;
@@ -219,15 +239,62 @@ button:hover {
 }
 .contact-main-section-form form input {
   padding: 1em;
+=======
+.input__box--label {
+  display: flex;
+  width: 80%;
+  cursor: pointer;
+}
+.input__box--label:hover {
+  color: #FFDF2B;
+}
+
+.section__signup--form {
+  background: white;
+  padding: 3em 0;
+}
+
+form {
+  background-color: #158A43;
+  width: 50%;
+  color: #FFDF2B;
+  margin: 0 auto;
+  padding: 1em 4em;
+  border-radius: 4px;
+  border: none;
+}
+form h2 {
+  color: #000;
+  text-align: center;
+}
+form label {
+  padding: 1em 0;
+}
+form button {
+  width: 20%;
+  border: none;
+  border-radius: 10px;
+  background-color: #FFDF2B;
+  font-weight: bolder;
+  color: #158A43;
+  margin: 2.8em 19em;
+  padding: 1em 0.5em;
+}
+form button:hover {
+  background-color: white;
+  color: #158A43;
+
 }
 
 .section-two-left {
   width: 50%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/5029646/pexels-photo-5029646.jpeg?cs=srgb&dl=pexels-rajesh-s-balouria-5029646.jpg&fm=jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/5029646/pexels-photo-5029646.jpeg?cs=srgb&dl=pexels-rajesh-s-balouria-5029646.jpg&fm=jpg") no-repeat center center/cover;
   padding: 2em 2em;
+  margin: 2em 0;
 }
 .section-two-left li {
-  padding: 0.6em 0.1em;
+  margin-left: 1.5em;
+  padding: 0.6em 1em;
   color: white;
   font-weight: 700;
   font-size: 1.7rem;
@@ -246,12 +313,15 @@ button:hover {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 2em;
-  background-color: green;
 }
 
 .section-two-right {
   width: 50%;
   background: url("images/farmers-image.jpeg") no-repeat center center/contain cover;
+}
+
+.section__two--left--right {
+  background-color: #FFDF2B;
 }
 
 .section-one {
@@ -311,7 +381,9 @@ button:hover {
   color: white;
 }
 .hero-section button {
+
   margin: 4em 0em;
+  
   background-color: #158A43;
   color: #FFDF2B;
   font-size: 1.5rem;
@@ -345,6 +417,7 @@ button:hover {
   background-color: #158A43;
   color: yellow;
   font-weight: 700;
+  font-size: 1.5rem;
 }
 .footer__section--page ul {
   cursor: pointer;
