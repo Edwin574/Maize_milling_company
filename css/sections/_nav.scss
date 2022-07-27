@@ -7,7 +7,7 @@
   background-color: $green;
   .navbar-flex {
     @include mixins.flex-box(space-between, center, row, wrap);
-    font-weight: 800;
+    font-weight: bolder;
   }
   button {
     @extend %button;
@@ -18,14 +18,15 @@
       background-color: rgb(255, 255, 0.7);
     }
   }
-}
-a {
-  color: $yellow;
-  text-decoration: none;
-  &:hover {
-    color: $white;
+  a {
+    color: $yellow;
+    text-decoration: none;
+    &:hover {
+      color: $white;
+    }
   }
 }
+
 .navigation-bar ul {
   @extend %listitems;
   @include mixins.flex-box(space-between, center, row, nowrap);
@@ -40,12 +41,47 @@ a {
   }
 }
 
-@media screen and (max-width: 415px) {
+
+@media screen and (max-width:415px) {
   .navigation-bar {
-    ul {
-      li {
-        display: none;
+    color: $yellow;
+    background-color: $green;
+    text-align: center;
+    .navbar-flex {
+      @include mixins.flex-box(space-between, center, row, wrap);
+      font-weight: bolder;
+    }
+    button {
+      cursor: pointer;
+      padding:.6em 1em;
+      border-radius: 20px;
+      border: none;
+      background-color: $yellow;
+      &:hover {
+        background-color: rgb(255, 255, 0.7);
       }
     }
+    a {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+  
+  .navigation-bar ul {
+    list-style-type: none;
+    @include mixins.flex-box(space-between, center, row, nowrap);
+  }
+  .navigation-bar-left {
+    
+    .navbar-left-logo {
+    width: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px 2px $yellow;
+    }
+  }
+  .navigation-bar-right{
+    padding: 0em;
+    @include mixins.flex-box(center, center, row, nowrap);
   }
 }

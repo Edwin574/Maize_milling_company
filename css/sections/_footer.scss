@@ -3,50 +3,75 @@
 @use "../overalstyles/variables" as *;
 
 .logo {
-    img {
-        @extend %company-logo;
-
-    }
+  img {
+    @extend %company-logo;
+  }
 }
 
 .footer-list-item {
-    ul {
-        @extend %listitems;
-       
-    }
+  ul {
+    @extend %listitems;
+  }
 }
 
-.icons__ul--li{
-    ul {
-        @extend %listitems;
-        @include mixins.flex-box(center,center,row, nowrap);
-        gap:2em;
-        cursor: pointer;
-        & :hover{
-            color:$yellow;
-        }
+.icons__ul--li {
+  @include mixins.flex-box(center, center, row, nowrap);
+  gap: 2em;
+  ul {
+    @extend %listitems;
+
+    cursor: pointer;
+    & :hover {
+      color: $yellow;
     }
+    li {
+      @include mixins.flex-box(center, center, row, nowrap);
+      img {
+        width: 10%;
+      }
+    }
+  }
 }
 
 .footer__section--page {
-    padding: 2em 0em;
-    @include mixins.flex-box(space-around, center, row, nowrap);
-    @extend %listitems;
-
-    background-color:$green;
-
-    color:yellow;
-    font-weight: 700;
-    font-size:1.5rem;
-    ul{
-        cursor: pointer;
-        & :hover{
-            color:white;
-            li{
-            padding:3em 0;}
+  padding: 2em 0em;
+  @include mixins.flex-box(space-around, center, row, wrap);
+  @extend %listitems;
+  background-color: $green;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  ul {
+    cursor: pointer;
+    & :hover {
+      color: white;
+      li {
+        padding: 3em 0;
+      }
     }
-   
+  }
+}
+
+@media screen and (max-width: 415px) {
+  footer {
+    background-color: $green;
+  }
+  .footer__section--page {
+    text-align: center;
+    display: inline;
+    .footer-list-item {
+      ul li {
+        border-bottom: 1px solid black;
+      }
     }
+    .icons__ul--li {
+      @include mixins.flex-box(flex-start,center, column, wrap);
 
-
+      ul li {
+        img {
+          width: 10%;
+        }
+      }
+    }
+  }
 }
