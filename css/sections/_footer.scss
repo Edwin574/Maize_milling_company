@@ -21,14 +21,17 @@
         @extend %listitems;
         @include mixins.flex-box(center,center,row, nowrap);
         gap:2em;
+        cursor: pointer;
+        & :hover{
+            color:$yellow;
+        }
     }
 }
 
 .footer__section--page {
     @include mixins.flex-box(space-around, center, row, nowrap);
     @extend %listitems;
-    margin:4em 0;
-    background-color:green;
+    background-color:$green;
     color:yellow;
     font-weight: 700;
     ul{
