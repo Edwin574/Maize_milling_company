@@ -10,14 +10,6 @@ label {
 
 }
 
-form {
-    background-color: $green;
-    color: $yellow;
-    width: 90%;
-    padding: 2em;
-    border-radius: 6px;
-
-}
 
 .input__box--label {
     display: flex;
@@ -33,26 +25,34 @@ form {
     border: none;
 }
 
-button {
-    @extend %button;
-    width: 20%;
-    border: none;
-    border-radius: 10px;
-    background-color: $yellow;
-    font-weight:bolder;
-    color: $green;
-    margin: 2.8em 19em;
-    padding: 1em .5em;
 
-    &:hover {
-        background-color: $white;
-        color: $green;
+.form {  width: 50%;
+    form {
+        background-color: $green;
+        color: $yellow;
+        width: 90%;
+        padding: 2em;
+        border-radius: 6px;
+    
     }
-}
+    button {
+        @extend %button;
+        width: 20%;
+        border: none;
+        border-radius: 10px;
+        background-color: $yellow;
+        font-weight:bolder;
+        color: $green;
+        margin: 2.8em 19em;
+        padding: 1em .5em;
+    
+        &:hover {
+            background-color: $white;
+            color: $green;
+        }
+    }
 
-.form {
-
-    width: 50%;
+  
 }
 
 .image {
@@ -65,7 +65,6 @@ button {
 
 .sections__selling--form {
     padding: 5em 0;
-    height: 75vh;
     background-color: $yellow;
 
 }
