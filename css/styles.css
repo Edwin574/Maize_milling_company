@@ -18,7 +18,7 @@ body {
   list-style-type: none;
 }
 
-.navigation-bar button, .hero-section button, .section-one .--card-one button, button {
+.navigation-bar button, .hero-section button, .section-one .--card-one button, .shop-container .shop-container-items .shop-advert button, button {
   cursor: pointer;
   padding: 0.8em 2em;
 }
@@ -33,14 +33,6 @@ body {
 label {
   display: block;
   width: 20%;
-}
-
-form {
-  background-color: #158A43;
-  color: #FFDF2B;
-  width: 90%;
-  padding: 2em;
-  border-radius: 6px;
 }
 
 .input__box--label {
@@ -58,14 +50,10 @@ form {
 }
 
 button {
-  width: 20%;
   border: none;
   border-radius: 10px;
   background-color: #FFDF2B;
   font-weight: bolder;
-  color: #158A43;
-  margin: 2.8em 19em;
-  padding: 1em 0.5em;
 }
 button:hover {
   background-color: white;
@@ -74,6 +62,18 @@ button:hover {
 
 .form {
   width: 50%;
+}
+.form .submit {
+  text-align: center;
+  color: #158A43;
+  padding: 1em 0.5em;
+}
+.form form {
+  background-color: #158A43;
+  color: #FFDF2B;
+  width: 90%;
+  padding: 2em;
+  border-radius: 6px;
 }
 
 .image {
@@ -92,6 +92,133 @@ button:hover {
   padding: 5em 0;
   height: 75vh;
   background-color: #FFDF2B;
+}
+
+.sub-nav {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: lightgrey;
+}
+
+.shop-main__yellow {
+  background-color: #FFDF2B;
+}
+
+.shop-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.5em;
+  background-color: #FFDF2B;
+  padding: 1.5em 0em;
+}
+.shop-container .shop-menu {
+  text-align: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 0.5;
+}
+.shop-container .shop-menu div {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 2.3em 0em;
+  border-bottom: 1px solid black;
+}
+.shop-container .shop-menu div:hover {
+  background-color: #158A43;
+  color: #FFDF2B;
+}
+.shop-container .shop-container-items {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.shop-container .shop-container-items .shop-advert {
+  box-shadow: 1px 1px 1px 2px grey;
+  text-align: center;
+}
+.shop-container .shop-container-items .shop-advert button {
+  background-color: #158A43;
+  color: #FFDF2B;
+  margin: 1em 0em;
+}
+.shop-container .shop-container-items .shop-advert button:hover {
+  background-color: white;
+  color: #158A43;
+}
+.shop-container .shop-container-items .shop-advert h3 {
+  text-transform: uppercase;
+}
+
+.contact-main-section {
+  font-weight: bolder;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../../images/selling-background.jpg") no-repeat center center/cover;
+}
+
+.contact-main-section--address {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contact-main-section--address .contact--physical-address {
+  text-align: center;
+  flex: 1;
+}
+.contact-main-section--address .contact--physical-address h2 {
+  font-size: 2rem;
+}
+.contact-main-section--address .contact--physical-address p {
+  font-size: 1.5rem;
+}
+.contact-main-section--address .contact--reach-us {
+  flex: 1;
+  text-align: center;
+}
+.contact-main-section--address .contact--reach-us h2 {
+  font-size: 2rem;
+}
+.contact-main-section--address .contact--reach-us p {
+  font-size: 1.5rem;
+}
+
+.contact-main-section-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5em 0em;
+}
+.contact-main-section-form form {
+  padding: 2em;
+  width: 50%;
+}
+.contact-main-section-form form h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.contact-main-section-form form label {
+  font-size: 1.5rem;
+}
+.contact-main-section-form form input {
+  padding: 1em;
 }
 
 .section-two-left {
@@ -184,7 +311,7 @@ button:hover {
   color: white;
 }
 .hero-section button {
-  margin-top: 10%;
+  margin: 4em 0em;
   background-color: #158A43;
   color: #FFDF2B;
   font-size: 1.5rem;
