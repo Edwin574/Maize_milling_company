@@ -138,6 +138,10 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 2em;
+  cursor: pointer;
+}
+.icons__ul--li ul :hover {
+  color: #FFDF2B;
 }
 
 .footer__section--page {
@@ -146,7 +150,8 @@ body {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  background-color: green;
+  background-color: #158A43;
+
   color: yellow;
   font-weight: 700;
 }
