@@ -209,6 +209,7 @@ button:hover {
 }
 
 .footer__section--page {
+  padding: 5em 0em;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -274,8 +275,44 @@ a:hover {
     display: none;
   }
 }
-.myheading {
-  color: red;
+.about-main--part {
+  background-color: gold;
+}
+
+.about-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 2em 0em;
+}
+.about-description .about-description__yellow {
+  flex: 1;
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../../images/about-hero-background.jpg") no-repeat center center/cover;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: white;
+}
+.about-description .about-description__green {
+  flex: 1;
+  height: 60vh;
+  background-color: #158A43;
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 1em;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .about-company {
@@ -284,9 +321,46 @@ a:hover {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
+  gap: 1em;
+  padding: 2em 0em;
+}
+.about-company .about--illustration__large {
+  width: 15%;
+  border-radius: 100%;
 }
 .about-company .about--illustration {
-  border-radius: 30%;
-  width: 50%;
-  border: 2px solid black;
+  border-radius: 100%;
+  width: 20%;
+}
+.about-company .company-slogan {
+  flex: 1;
+  background-color: #158A43;
+  padding: 3em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #158A43;
+}
+.about-company .company-slogan div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.about-company .company-slogan div h3 {
+  font-size: 1.5rem;
+  color: #FFDF2B;
+  font-weight: bold;
+}
+.about-company .company-slogan p {
+  display: none;
+}
+.about-company .company-slogan:hover div {
+  display: none;
+}
+.about-company .company-slogan:hover p {
+  text-align: center;
+  display: block;
+  padding: 1em;
+  color: white;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */
