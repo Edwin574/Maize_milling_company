@@ -18,7 +18,7 @@ body {
   list-style-type: none;
 }
 
-.navigation-bar button, .hero-section button, .section-one .--card-one button {
+.navigation-bar button, .hero-section button, .section-one .--card-one button, button {
   cursor: pointer;
   padding: 0.8em 2em;
 }
@@ -28,6 +28,70 @@ body {
   border-radius: 50%;
   background-color: transparent;
   box-shadow: 2px 2px 2px 2px #FFDF2B;
+}
+
+label {
+  display: block;
+  width: 20%;
+}
+
+form {
+  background-color: #158A43;
+  color: #FFDF2B;
+  width: 90%;
+  padding: 2em;
+  border-radius: 6px;
+}
+
+.input__box--label {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+  font-weight: bold;
+}
+
+.input__box--label input {
+  width: 70%;
+  padding: 1em 0;
+  border-radius: 4px;
+  border: none;
+}
+
+button {
+  width: 20%;
+  border: none;
+  border-radius: 10px;
+  background-color: #FFDF2B;
+  font-weight: bolder;
+  color: #158A43;
+  margin: 2.8em 19em;
+  padding: 1em 0.5em;
+}
+button:hover {
+  background-color: white;
+  color: #158A43;
+}
+
+.form {
+  width: 50%;
+}
+
+.image {
+  width: 50%;
+}
+
+.form__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sections__selling--form {
+  padding: 5em 0;
+  height: 75vh;
+  background-color: #FFDF2B;
 }
 
 .section-two-left {
@@ -151,7 +215,6 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   background-color: #158A43;
-
   color: yellow;
   font-weight: 700;
 }
