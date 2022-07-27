@@ -5,34 +5,32 @@
 .navigation-bar {
   color: $yellow;
   background-color: $green;
-  .navbar-flex{
+  .navbar-flex {
     @include mixins.flex-box(space-between, center, row, wrap);
     font-weight: 800;
   }
-  button{
+  button {
     @extend %button;
     border-radius: 20px;
-    border:none;
+    border: none;
     background-color: $yellow;
-    &:hover{
-        background-color:rgb(255,255,0.7)	
-        ;
+    &:hover {
+      background-color: rgb(255, 255, 0.7);
     }
   }
-  
 }
-a{
-    color:$yellow;
-    text-decoration: none;
-    &:hover{
-        color: $white;
-    }
+a {
+  color: $yellow;
+  text-decoration: none;
+  &:hover {
+    color: $white;
+  }
 }
 .navigation-bar ul {
   @extend %listitems;
   @include mixins.flex-box(space-between, center, row, nowrap);
   gap: 1em;
-  li:hover{
+  li:hover {
     color: $white;
   }
 }
@@ -42,3 +40,12 @@ a{
   }
 }
 
+@media screen and (max-width: 415px) {
+  .navigation-bar {
+    ul {
+      li {
+        display: none;
+      }
+    }
+  }
+}

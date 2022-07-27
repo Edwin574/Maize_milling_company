@@ -146,7 +146,6 @@ body {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin: 4em 0;
   background-color: green;
   color: yellow;
   font-weight: 700;
@@ -202,14 +201,24 @@ a:hover {
   color: white;
 }
 
+@media screen and (max-width: 415px) {
+  .navigation-bar ul li {
+    display: none;
+  }
+}
 .myheading {
   color: red;
 }
 
-.about-vission {
+.about-company {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+.about-company .about--illustration {
+  border-radius: 30%;
+  width: 50%;
+  border: 2px solid black;
 }/*# sourceMappingURL=styles.css.map */
