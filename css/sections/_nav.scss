@@ -6,7 +6,7 @@
   color: $yellow;
   background-color: $green;
   .navbar-flex{
-    @include mixins.flex-box(space-between, center, row, nowrap);
+    @include mixins.flex-box(space-between, center, row, wrap);
     font-weight: 800;
   }
   button{

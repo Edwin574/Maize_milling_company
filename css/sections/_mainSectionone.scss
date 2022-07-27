@@ -5,7 +5,7 @@
 
 .section-one{
     @include mixins.flex-box(space-around,center,row,wrap);
-    background-color: $primarycolor;
+    background-color: $green;
     padding: 3em 0em;
     .--card-one{
         text-align: center;

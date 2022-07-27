@@ -69,7 +69,7 @@ body {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #006400;
+  background-color: #158A43;
   padding: 3em 0em;
 }
 .section-one .--card-one {
@@ -170,7 +170,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   font-weight: 800;
 }
 .navigation-bar button {
