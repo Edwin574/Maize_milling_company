@@ -71,7 +71,7 @@
 
 
 
-@media screen and (max-width:415px) {
+@media screen and (max-width:600px) {
     .sub-nav {
         border: none;
         @include mixins.flex-box(space-around, center, row, nowrap);
@@ -83,28 +83,23 @@
         @include mixins.flex-box(center,flex-start,column, wrap);
         gap: .5em;
         background-color: $yellow;
-        // padding: 1.5em 0em;
 
         .shop-menu {
             padding: 0em;
-            // text-align: center;
             border:none;
             @include mixins.flex-box(center, center,row, nowrap);
             gap:1.3em;
 
-            // width: fit-content;
             div {
-                color: white;
-                border-radius: 10px;
-                font-size: .7rem;
-                border: none;
+                color: green;
+                font-size: .8rem;
                 padding: 0;
-                background-color: $green;                
+                border: none;           
             }
         }
 
         .shop-container-items {
-            // flex: 2;
+           
 
             @include mixins.flex-box(space-between, center, row, wrap);
             gap: 1em;

@@ -87,17 +87,18 @@
   }
 }
 
-@media screen and (max-width:415px) {
+@media screen and (max-width:600px) {
   .about-description {
-    @include mixins.flex-box(center, center, row, wrap);
-    gap:1em;
+    display: block;
     padding: 0em;
     .about-description__yellow {
+      display: block;
       width: 100%;
       text-align: center;
       color: white;
     }
     .about-description__green {
+      display: block;
         width: 100%;
         background-color: $green;
         color: white;
