@@ -3,6 +3,7 @@
 @use "../overalstyles/variables" as *;
 
 .logo {
+    padding: 0em;
     img {
         @extend %company-logo;
     }

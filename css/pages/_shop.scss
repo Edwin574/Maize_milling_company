@@ -1,60 +1,135 @@
-
 @use "../overalstyles/inheritance";
 @use "../overalstyles/mixins";
 @use "../overalstyles/variables" as *;
 
-.sub-nav{
+.sub-nav {
     border: 2px solid black;
-    @include mixins.flex-box(space-around,center,row,nowrap);
+    @include mixins.flex-box(space-around, center, row, nowrap);
     background-color: lightgrey;
 }
-.shop-main__yellow{
-    background-color: $yellow;
+
+.shop-main__yellow {
+    background-color: rgb(253, 255, 1);
 }
-.shop-container{
-    @include mixins.flex-box(center,flex-start,row,nowrap);
-    gap:.5em;
+
+.shop-container {
+    @include mixins.flex-box(center, flex-start, row, nowrap);
+    gap: .5em;
     background-color: $yellow;
     padding: 1.5em 0em;
-    .shop-menu{
+
+    .shop-menu {
         text-align: center;
-        border:1px solid black;
-        @include mixins.flex-box(flex-end,flex-end, column,nowrap);
-        flex:.5;
+        border: 1px solid black;
+        @include mixins.flex-box(flex-end, flex-end, column, nowrap);
+        flex: .5;
+
         // width: fit-content;
-        div{
+        div {
             font-size: 1.5rem;
             width: 100%;
-            padding:2.3em 0em;
+            padding: 2.3em 0em;
             border-bottom: 1px solid black;
-            &:hover{
-                background-color:$green;
+
+            &:hover {
+                background-color: $green;
                 color: $yellow;
             }
         }
     }
-    .shop-container-items{
-        flex:2;
-        
-        @include mixins.flex-box(space-between, center,row,wrap);
-        gap:1em;
-        .shop-advert{
+
+    .shop-container-items {
+        flex: 2;
+
+        @include mixins.flex-box(space-between, center, row, wrap);
+        gap: 1em;
+
+        .shop-advert {
             box-shadow: 1px 1px 1px 2px grey;
             text-align: center;
+
             // margin-top:1.5em;
-            button{
+            button {
                 @extend %button;
                 background-color: $green;
-                color:$yellow;
-                margin:1em 0em;
-                &:hover{
+                color: $yellow;
+                margin: 1em 0em;
+
+                &:hover {
                     background-color: white;
-                    color:$green;
+                    color: $green;
                 }
-            
+
             }
-            h3{
+
+            h3 {
                 text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:415px) {
+    .sub-nav {
+        border: none;
+        @include mixins.flex-box(space-around, center, row, nowrap);
+        padding: 1em;
+        font-size: 1rem;
+    }
+
+    .shop-container {
+        @include mixins.flex-box(center,flex-start,column, wrap);
+        gap: .5em;
+        background-color: $yellow;
+        // padding: 1.5em 0em;
+
+        .shop-menu {
+            padding: 0em;
+            // text-align: center;
+            border:none;
+            @include mixins.flex-box(center, center,row, nowrap);
+            gap:1.3em;
+
+            // width: fit-content;
+            div {
+                color: white;
+                border-radius: 10px;
+                font-size: .7rem;
+                border: none;
+                padding: 0;
+                background-color: $green;                
+            }
+        }
+
+        .shop-container-items {
+            // flex: 2;
+
+            @include mixins.flex-box(space-between, center, row, wrap);
+            gap: 1em;
+            
+
+            .shop-advert {
+                height: 300px;
+                box-shadow: 1px 1px 1px 2px grey;
+                text-align: center;
+                img{
+                    width: 150px;
+                }
+                button {
+                    cursor: pointer;
+                    padding:.8em 1em;
+                    background-color: $green;
+                    color: $yellow;
+                    margin: 1em 0em;
+
+                }
+
+                h3 {
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                }
             }
         }
     }

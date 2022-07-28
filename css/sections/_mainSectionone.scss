@@ -44,7 +44,7 @@
 
     }
 }
-@media screen and(max-width:415px){
+@media screen and(max-width:600px){
     .section-one{
         @include mixins.flex-box(space-around,center,row,wrap);
         gap:2em;
