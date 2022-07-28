@@ -42,9 +42,10 @@
     @include mixins.flex-box(space-around, center, row, wrap);
     @extend %listitems;
     background-color: $green;
-    color: white;
+    color: $yellow;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-transform:uppercase;
 
     ul {
         cursor: pointer;
