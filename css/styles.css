@@ -18,7 +18,8 @@ body {
   list-style-type: none;
 }
 
-.navigation-bar button, .hero-section button, .section-one .--card-one button, form button, .shop-container .shop-container-items .shop-advert button, button, .form .form button {
+.navigation-bar button, .hero-section button, .section-one .--card-one button, .section__signup--form form button, .shop-container .shop-container-items .shop-advert button, button, .form button {
+
   cursor: pointer;
   padding: 0.8em 2em;
 }
@@ -30,16 +31,15 @@ body {
   box-shadow: 2px 2px 2px 2px #FFDF2B;
 }
 
-label {
-  display: block;
-  width: 20%;
-}
-
 .input__box--label {
   display: flex;
   align-items: center;
   padding-bottom: 1em;
   font-weight: bold;
+}
+.input__box--label label {
+  display: block;
+  width: 20%;
 }
 
 .input__box--label input {
@@ -60,13 +60,9 @@ button:hover {
   color: #158A43;
 }
 
+
 .form {
   width: 50%;
-}
-.form .submit {
-  text-align: center;
-  color: #158A43;
-  padding: 1em 0.5em;
 }
 .form form {
   background-color: #158A43;
@@ -75,6 +71,21 @@ button:hover {
   padding: 2em;
   border-radius: 6px;
 }
+
+
+.form {
+  width: 50%;
+}
+.form form {
+  background-color: #158A43;
+  color: #FFDF2B;
+  width: 90%;
+  padding: 2em;
+  border-radius: 6px;
+}
+
+.form button {
+
 .form .form {
   width: 50%;
 }
@@ -95,6 +106,10 @@ button:hover {
   margin: 2.8em 19em;
   padding: 1em 0.5em;
 }
+
+.form button:hover {
+
+
 .form .form button:hover {
   background-color: white;
   color: #158A43;
@@ -111,11 +126,55 @@ button:hover {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.form__image .submit {
+  text-align: center;
+  color: #158A43;
+  padding: 1em 0.5em;
+}
 
 .sections__selling--form {
   padding: 5em 0;
   background-color: #FFDF2B;
 }
+
+
+.delivery-form {
+  background: #158A43;
+  width: 80%;
+  color: #FFDF2B;
+  margin: 2em auto;
+  padding: 1em 0;
+  text-align: center;
+  font-size: 2rem;
+}
+.delivery-form .delivery__form--main {
+  margin: 0 auto;
+  width: 70%;
+  padding: 0em 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 3em;
+}
+.delivery-form .delivery__form--main label {
+  display: block;
+}
+.delivery-form .delivery__form--main h2 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+.delivery-form .btn button {
+  background: #FFDF2B;
+  margin: 0 20em;
+}
+
+.sections__delivery--form {
+  background-color: #FFDF2B;
+  padding: 3em 0;
+}
+
 
 .sub-nav {
   border: 2px solid black;
@@ -257,8 +316,7 @@ button:hover {
   background: white;
   padding: 3em 0;
 }
-
-form {
+.section__signup--form form {
   background-color: #158A43;
   width: 50%;
   color: #FFDF2B;
@@ -267,14 +325,14 @@ form {
   border-radius: 4px;
   border: none;
 }
-form h2 {
+.section__signup--form form h2 {
   color: #000;
   text-align: center;
 }
-form label {
+.section__signup--form form label {
   padding: 1em 0;
 }
-form button {
+.section__signup--form form button {
   width: 20%;
   border: none;
   border-radius: 10px;
@@ -284,7 +342,7 @@ form button {
   margin: 2.8em 19em;
   padding: 1em 0.5em;
 }
-form button:hover {
+.section__signup--form form button:hover {
   background-color: white;
   color: #158A43;
 }

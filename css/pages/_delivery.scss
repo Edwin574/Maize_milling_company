@@ -1,0 +1,48 @@
+@use "../overalstyles/inheritance";
+@use "../overalstyles/variables" as *;
+@use "../overalstyles/mixins";
+
+.delivery-form {
+    background: $green;
+    width: 80%;
+    color: $yellow;
+    margin: 2em auto;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 2rem;
+
+    .delivery__form--main {
+
+        margin: 0 auto;
+        width: 70%;
+        padding: 0em 4em;
+
+        @include mixins.flex-box(space-between, center, row, nowrap);
+        padding: 3em;
+
+
+
+        label {
+            display: block;
+        }
+
+        h2 {
+            font-size:6rem;
+            font-weight: bold;
+
+        }
+    }
+
+    .btn {
+        button {
+            background: $yellow;
+            margin: 0 20em;
+
+
+        }
+    }
+}
+.sections__delivery--form{
+    background-color: $yellow;
+    padding:3em 0;
+}
