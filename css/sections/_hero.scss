@@ -3,7 +3,7 @@
 @use "../overalstyles/variables" as *;
 
 .hero-section {
-  height: 80vh;
+  // height: 80vh;
   padding: 4em;
   text-align: center;
 
@@ -36,13 +36,10 @@
 }
 @media screen and (max-width: 415px) {
   .hero-section {
-    width: 100vw;
-    padding: 1em;
-    text-align: center;
-
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
-      url("../../images/hero-bg2.jpg") no-repeat center center/cover;
-
+    // height: 50vh;
+    width: 100%;
+    // line-height: 1.5em;
+    padding: 2em 1em;
     p {
       color: $white;
       font-size: 1rem;
@@ -55,8 +52,9 @@
     }
 
     .hero-buttons {
-      @include mixins.flex-box(space-between, center, row, nowrap);
-      gap: 0em;
+      @include mixins.flex-box(center, center, row, nowrap);
+      gap: 1em;
+      margin: 0em;
       button {
         width: 100%;
         cursor: pointer;

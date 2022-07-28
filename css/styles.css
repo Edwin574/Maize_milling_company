@@ -404,7 +404,6 @@ form button:hover {
   }
 }
 .hero-section {
-  height: 80vh;
   padding: 4em;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../../images/hero-bg2.jpg") no-repeat center center/cover;
@@ -432,10 +431,8 @@ form button:hover {
 
 @media screen and (max-width: 415px) {
   .hero-section {
-    width: 100vw;
-    padding: 1em;
-    text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../../images/hero-bg2.jpg") no-repeat center center/cover;
+    width: 100%;
+    padding: 2em 1em;
   }
   .hero-section p {
     color: white;
@@ -448,11 +445,12 @@ form button:hover {
   }
   .hero-section .hero-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 0em;
+    gap: 1em;
+    margin: 0em;
   }
   .hero-section .hero-buttons button {
     width: 100%;
@@ -497,7 +495,7 @@ form button:hover {
   flex-wrap: wrap;
   background-color: #158A43;
   color: white;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 1.5rem;
 }
 .footer__section--page ul {
@@ -509,14 +507,32 @@ form button:hover {
 .footer__section--page ul :hover li {
   padding: 3em 0;
 }
+.footer__section--page .footer-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15em;
+}
 
 @media screen and (max-width: 415px) {
   footer {
     background-color: #158A43;
+    padding: 0em;
+  }
+  footer .logo img {
+    width: 50%;
   }
   .footer__section--page {
     text-align: center;
-    display: inline;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 1em;
   }
   .footer__section--page .footer-list-item ul li {
     border-bottom: 1px solid black;
@@ -569,7 +585,7 @@ form button:hover {
   .navigation-bar {
     color: #FFDF2B;
     background-color: #158A43;
-    text-align: center;
+    font-size: 1rem;
   }
   .navigation-bar .navbar-flex {
     display: flex;
@@ -601,8 +617,17 @@ form button:hover {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+  .navigation-bar-left {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
   .navigation-bar-left .navbar-left-logo {
-    width: 50px;
+    width: 100%;
+    height: 50px;
     border-radius: 50%;
     background-color: transparent;
     box-shadow: 2px 2px 2px 2px #FFDF2B;
@@ -704,4 +729,83 @@ form button:hover {
   padding: 1em;
   color: white;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 415px) {
+  .about-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0em;
+  }
+  .about-description .about-description__yellow {
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  .about-description .about-description__green {
+    width: 100%;
+    background-color: #158A43;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .about-company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em 1em;
+  }
+  .about-company .about--illustration__large {
+    width: 15%;
+    border-radius: 100%;
+  }
+  .about-company .about--illustration {
+    border-radius: 100%;
+    width: 20%;
+  }
+  .about-company .company-slogan {
+    flex: 1;
+    background-color: #158A43;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #158A43;
+  }
+  .about-company .company-slogan div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .about-company .company-slogan div h3 {
+    font-size: 1.5rem;
+    color: #FFDF2B;
+    font-weight: bold;
+  }
+  .about-company .company-slogan p {
+    display: none;
+  }
+  .about-company .company-slogan:hover div {
+    display: none;
+  }
+  .about-company .company-slogan:hover p {
+    text-align: center;
+    display: block;
+    padding: 1em;
+    color: white;
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
