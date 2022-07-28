@@ -268,7 +268,7 @@ button:hover {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 600px) {
   .sub-nav {
     border: none;
     display: flex;
@@ -299,12 +299,10 @@ button:hover {
     gap: 1.3em;
   }
   .shop-container .shop-menu div {
-    color: white;
-    border-radius: 10px;
-    font-size: 0.7rem;
-    border: none;
+    color: green;
+    font-size: 0.8rem;
     padding: 0;
-    background-color: #158A43;
+    border: none;
   }
   .shop-container .shop-container-items {
     display: flex;
@@ -502,10 +500,7 @@ button:hover {
   background-color: #FFDF2B;
 }
 
-
 @media screen and (max-width: 600px) {
-
-
   .section-two-left {
     width: 100%;
   }
@@ -639,11 +634,13 @@ button:hover {
     border-radius: 10px;
   }
 }
-
 footer {
   background-color: #158A43;
 }
 
+.logo {
+  padding: 0em;
+}
 .footer-list-item ul li {
   padding-bottom: 0.5em;
 }
@@ -862,22 +859,19 @@ footer {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 600px) {
   .about-description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1em;
+    display: block;
     padding: 0em;
   }
   .about-description .about-description__yellow {
+    display: block;
     width: 100%;
     text-align: center;
     color: white;
   }
   .about-description .about-description__green {
+    display: block;
     width: 100%;
     background-color: #158A43;
     color: white;
