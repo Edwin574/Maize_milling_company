@@ -442,7 +442,7 @@ button:hover {
 .hero-section {
   padding: 4em;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../../images/hero-bg2.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/hero-bg2.jpg) no-repeat center center/cover;
 }
 .hero-section p {
   color: white;
