@@ -2,16 +2,17 @@
 @use "../overalstyles/mixins";
 @use "../overalstyles/inheritance";
 
-label {
-  display: block;
-  width: 20%;
-}
 
 .input__box--label {
   display: flex;
   align-items: center;
   padding-bottom: 1em;
   font-weight: bold;
+
+  label {
+    display: block;
+    width: 20%;
+  }
 }
 
 .input__box--label input {
@@ -38,11 +39,7 @@ button {
 
 .form {
   width: 50%;
-  .submit {
-    text-align: center;
-    color: $green;
-    padding: 1em 0.5em;
-  }
+
   form {
     background-color: $green;
     color: $yellow;
@@ -50,35 +47,39 @@ button {
     padding: 2em;
     border-radius: 6px;
   }
+}
 
+.form {
+  width: 50%;
 
-.form {  width: 50%;
-    form {
-        background-color: $green;
-        color: $yellow;
-        width: 90%;
-        padding: 2em;
-        border-radius: 6px;
-    
-    }
-    button {
-        @extend %button;
-        width: 20%;
-        border: none;
-        border-radius: 10px;
-        background-color: $yellow;
-        font-weight:bolder;
-        color: $green;
-        margin: 2.8em 19em;
-        padding: 1em .5em;
-    
-        &:hover {
-            background-color: $white;
-            color: $green;
-        }
-    }
+  form {
+    background-color: $green;
+    color: $yellow;
+    width: 90%;
+    padding: 2em;
+    border-radius: 6px;
+
+  }
 
   
+  button {
+    @extend %button;
+    width: 20%;
+    border: none;
+    border-radius: 10px;
+    background-color: $yellow;
+    font-weight: bolder;
+    color: $green;
+    margin: 2.8em 19em;
+    padding: 1em .5em;
+
+    &:hover {
+      background-color: $white;
+      color: $green;
+    }
+  }
+
+
 
 }
 
@@ -88,12 +89,17 @@ button {
 
 .form__image {
   @include mixins.flex-box(center, center, row, wrap);
+  .submit {
+    text-align: center;
+    color: $green;
+    padding: 1em 0.5em;
+  }
+
 }
 
 .sections__selling--form {
 
-    padding: 5em 0;
-    background-color: $yellow;
+  padding: 5em 0;
+  background-color: $yellow;
 
 }
-
