@@ -124,7 +124,7 @@ button:hover {
 
 .delivery-form {
   background: #158A43;
-  width: 80%;
+  width: 70%;
   color: #FFDF2B;
   margin: 2em auto;
   padding: 1em 0;
@@ -133,14 +133,12 @@ button:hover {
 }
 .delivery-form .delivery__form--main {
   margin: 0 auto;
-  width: 70%;
-  padding: 0em 4em;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 3em;
 }
 .delivery-form .delivery__form--main label {
   display: block;
@@ -151,12 +149,53 @@ button:hover {
 }
 .delivery-form .btn button {
   background: #FFDF2B;
-  margin: 0 20em;
 }
 
 .sections__delivery--form {
   background-color: #FFDF2B;
   padding: 3em 0;
+}
+
+@media screen and (max-width: 415px) {
+  .delivery-form {
+    width: 100%;
+    margin: 0em;
+    text-align: center;
+  }
+  .delivery__form--main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1em;
+  }
+  .delivery__form--main label {
+    font-size: 0.9rem;
+  }
+  .delivery__form--main h2 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .btn button {
+    background: #FFDF2B;
+  }
+  sections__delivery--form {
+    background-color: #FFDF2B;
+  }
+}
+.icons__ul--li ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2em;
+  text-align: center;
+}
+
+.footer-list-item {
+  width: 50%;
 }
 
 .sub-nav {
@@ -386,6 +425,11 @@ button:hover {
 .section__signup--form form button {
   width: 20%;
   border: none;
+}
+.section__signup--form form button .input__box--label {
+  display: flex;
+  width: 80%;
+  cursor: pointer;
   border-radius: 10px;
   background-color: #FFDF2B;
   font-weight: bolder;
@@ -393,24 +437,46 @@ button:hover {
   margin: 2.8em 19em;
   padding: 1em 0.5em;
 }
-.section__signup--form form button:hover {
+.section__signup--form form button .input__box--label:hover {
+  color: #FFDF2B;
+}
+.section__signup--form form button .input__box--label:hover {
   background-color: white;
   color: #158A43;
 }
 
+@media screen and (max-width: 500px) {
+  .footer__section--page .logo img {
+    display: none;
+  }
+  .footer__section--page .input__box--label {
+    display: flex;
+    width: 100%;
+  }
+  .footer__section--page .input__box--label {
+    width: 80%;
+  }
+}
 .section-two-left {
   width: 45%;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/5029646/pexels-photo-5029646.jpeg?cs=srgb&dl=pexels-rajesh-s-balouria-5029646.jpg&fm=jpg") no-repeat center center/cover;
   padding: 2em 2em;
   margin: 2em 0;
 }
-.section-two-left li {
-  margin-left: 1.5em;
-  padding: 0.6em 1em;
+.section-two-left p {
+  padding: 1.3em 1em;
   color: white;
   font-weight: 700;
   font-size: 1.7rem;
   cursor: pointer;
+}
+.section-two-left .image--p {
+  display: flex;
+  justify-content: row;
+  align-items: nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2em;
 }
 .section-two-left h1 {
   color: #FFDF2B;
@@ -436,7 +502,10 @@ button:hover {
   background-color: #FFDF2B;
 }
 
+
 @media screen and (max-width: 600px) {
+
+
   .section-two-left {
     width: 100%;
   }
@@ -570,9 +639,15 @@ button:hover {
     border-radius: 10px;
   }
 }
-.logo {
-  padding: 0em;
+
+footer {
+  background-color: #158A43;
 }
+
+.footer-list-item ul li {
+  padding-bottom: 0.5em;
+}
+
 .icons__ul--li {
   display: flex;
   justify-content: center;
@@ -605,7 +680,6 @@ button:hover {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #158A43;
   color: #FFDF2B;
   font-weight: bold;
   font-size: 1rem;
@@ -629,29 +703,22 @@ button:hover {
   gap: 15em;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 500px) {
   footer {
     background-color: #158A43;
-    padding: 0em;
   }
   footer .logo img {
-    width: 50%;
+    display: none;
   }
   .footer__section--page {
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1em;
-    font-size: 1em;
   }
   .footer__section--page .footer-list-item ul li {
     border-bottom: 1px solid black;
-  }
-  .footer__section--page .icons__ul--li {
-    display: none;
   }
 }
 .navigation-bar {

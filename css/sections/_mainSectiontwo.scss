@@ -9,13 +9,18 @@
     padding: 2em 2em;
     margin: 2em 0;
 
-    li {
-        margin-left: 1.5em;
-        padding: 0.6em 1em;
+  p {
+        
+        padding: 1.3em 1em;
         color: $white;
         font-weight: 700;
         font-size: 1.7rem;
         cursor: pointer;
+        
+    }
+    .image--p{
+    @include mixins.flex-box( row, nowrap);
+    gap: 2em; 
     }
 
     h1 {
@@ -41,7 +46,10 @@
 
 
 
+
 @media screen and (max-width: 600px) {
+
+
     .section-two-left {
         width: 100%;
     }
