@@ -19,7 +19,6 @@ body {
 }
 
 .navigation-bar button, .hero-section button, .section-one .--card-one button, .section__signup--form form button, .shop-container .shop-container-items .shop-advert button, button, .form button {
-
   cursor: pointer;
   padding: 0.8em 2em;
 }
@@ -60,7 +59,6 @@ button:hover {
   color: #158A43;
 }
 
-
 .form {
   width: 50%;
 }
@@ -72,7 +70,6 @@ button:hover {
   border-radius: 6px;
 }
 
-
 .form {
   width: 50%;
 }
@@ -83,20 +80,7 @@ button:hover {
   padding: 2em;
   border-radius: 6px;
 }
-
 .form button {
-
-.form .form {
-  width: 50%;
-}
-.form .form form {
-  background-color: #158A43;
-  color: #FFDF2B;
-  width: 90%;
-  padding: 2em;
-  border-radius: 6px;
-}
-.form .form button {
   width: 20%;
   border: none;
   border-radius: 10px;
@@ -106,11 +90,7 @@ button:hover {
   margin: 2.8em 19em;
   padding: 1em 0.5em;
 }
-
 .form button:hover {
-
-
-.form .form button:hover {
   background-color: white;
   color: #158A43;
 }
@@ -136,7 +116,6 @@ button:hover {
   padding: 5em 0;
   background-color: #FFDF2B;
 }
-
 
 .delivery-form {
   background: #158A43;
@@ -174,7 +153,6 @@ button:hover {
   background-color: #FFDF2B;
   padding: 3em 0;
 }
-
 
 .sub-nav {
   border: 2px solid black;
@@ -464,7 +442,7 @@ button:hover {
 .hero-section {
   padding: 4em;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../../images/hero-bg2.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/hero-bg2.jpg) no-repeat center center/cover;
 }
 .hero-section p {
   color: white;
