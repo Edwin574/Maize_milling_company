@@ -1,86 +1,162 @@
 @use "../overalstyles/variables" as *;
 @use "../overalstyles/mixins";
 
-.about-main--part{
-    background-color: gold;
+.about-main--part {
+  background-color: gold;
 }
 
 .about-description {
-    @include mixins.flex-box(space-between, center, row, nowrap);
-    padding: 2em 0em;
+  @include mixins.flex-box(space-between, center, row, nowrap);
+  padding: 2em 0em;
 
-    .about-description__yellow {
-        // width: 50%;
-        flex: 1;
-        height: 60vh;
-        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-            url("../../images/about-hero-background.jpg") no-repeat center center/cover;
-        font-size: 2.5rem;
-        @include mixins.flex-box(center, center, row, nowrap);
-        color: white;
-    }
+  .about-description__yellow {
+    // width: 50%;
+    flex: 1;
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+      url("../../images/about-hero-background.jpg") no-repeat center
+        center/cover;
+    font-size: 2.5rem;
+    @include mixins.flex-box(center, center, row, nowrap);
+    color: white;
+  }
 
-    .about-description__green {
-        // width: 50%;
-        flex: 1;
-        height: 60vh;
-        background-color: $green;
-        color: white;
-        font-size: 1.3rem;
-        text-align: center;
-        padding: 1em;
-        font-weight: bolder;
-        @include mixins.flex-box(center, center, row, nowrap);
-    }
+  .about-description__green {
+    // width: 50%;
+    flex: 1;
+    height: 60vh;
+    background-color: $green;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1em;
+    font-weight: bolder;
+    @include mixins.flex-box(center, center, row, nowrap);
+  }
 }
 
 .about-company {
-    @include mixins.flex-box(space-between, center, row, nowrap);
-    gap: 1em;
-    padding: 2em 0em;
+  @include mixins.flex-box(space-between, center, row, nowrap);
+  gap: 1em;
+  padding: 2em 0em;
 
-    .about--illustration__large {
-        width: 15%;
-        border-radius: 100%;
+  .about--illustration__large {
+    width: 15%;
+    border-radius: 100%;
+  }
+
+  .about--illustration {
+    border-radius: 100%;
+    width: 20%;
+  }
+
+  .company-slogan {
+    flex: 1;
+    background-color: $green;
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px $green;
+
+    div {
+      @include mixins.flex-box(center, center, column, nowrap);
+
+      h3 {
+        font-size: 1.5rem;
+        color: $yellow;
+        font-weight: bold;
+      }
     }
 
-    .about--illustration {
-        border-radius: 100%;
-        width: 20%;
+    p {
+      display: none;
     }
 
-    .company-slogan {
-        flex:1;
+    &:hover {
+      div {
+        display: none;
+      }
+
+      p {
+        text-align: center;
+        display: block;
+        padding: 1em;
+        color: white;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:415px) {
+  .about-description {
+    @include mixins.flex-box(center, center, row, wrap);
+    gap:1em;
+    padding: 0em;
+    .about-description__yellow {
+      width: 100%;
+      text-align: center;
+      color: white;
+    }
+    .about-description__green {
+        width: 100%;
         background-color: $green;
-        padding: 3em;
-        border-radius: 10px;
-        box-shadow: 1px 1px 1px $green;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        padding: 1em;
+        @include mixins.flex-box(center, center, row, nowrap);
+      }
 
-        div {
-            @include mixins.flex-box(center, center, column, nowrap);
-            h3{
-                font-size: 1.5rem;
-                color: $yellow;
-                font-weight: bold;
-            }
-        }
-
-        p {
-            display: none;
-        }
-
-        &:hover {
-            div {
-                display: none;
-            }
-
-            p {
-                text-align: center;
-                display: block;
-                padding: 1em;
-                color:white;
-                font-size: 1.5rem;
-            }
-        }
+  }
+  .about-company {
+    @include mixins.flex-box(space-between, center, row, wrap);
+    gap: 1em;
+    padding: 1em 1em;
+  
+    .about--illustration__large {
+      width: 15%;
+      border-radius: 100%;
     }
+  
+    .about--illustration {
+      border-radius: 100%;
+      width: 20%;
+    }
+  
+    .company-slogan {
+      flex: 1;
+      background-color: $green;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 1px 1px 1px $green;
+  
+      div {
+        @include mixins.flex-box(center, center, column, nowrap);
+  
+        h3 {
+          font-size: 1.5rem;
+          color: $yellow;
+          font-weight: bold;
+        }
+      }
+  
+      p {
+        display: none;
+      }
+  
+      &:hover {
+        div {
+          display: none;
+        }
+  
+        p {
+          text-align: center;
+          display: block;
+          padding: 1em;
+          color: white;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
 }

@@ -5,6 +5,7 @@
 
 .section-one{
     @include mixins.flex-box(space-around,center,row,wrap);
+    
     background-color: $green;
     padding: 3em 0em;
     .--card-one{
@@ -41,5 +42,30 @@
             }
         }
 
+    }
+}
+@media screen and(max-width:415px){
+    .section-one{
+        @include mixins.flex-box(space-around,center,row,wrap);
+        gap:2em;
+        background-color: $green;
+        padding: 2em 0em;
+        .--card-one{
+            padding: 1em;
+    
+            img{
+                width: 40%;
+                height: 40%;
+                
+            }
+            h3{
+                font-size: 1.5rem;
+            }
+            p{
+                font: 1.3rem;
+                color: $green;
+                font-weight: bolder;
+            }
+        }
     }
 }
