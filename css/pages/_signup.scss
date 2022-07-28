@@ -46,19 +46,61 @@
             @extend %button;
             width: 20%;
             border: none;
-            border-radius: 10px;
-            background-color: $yellow;
-            font-weight: bolder;
-            color: $green;
-            margin: 2.8em 19em;
-            padding: 1em .5em;
 
-            &:hover {
-                background-color: $white;
+            .input__box--label {
+                display: flex;
+                width: 80%;
+
+                cursor: pointer;
+
+                &:hover {
+                    color: $yellow;
+                }
+
+                border-radius: 10px;
+                background-color: $yellow;
+                font-weight: bolder;
                 color: $green;
+                margin: 2.8em 19em;
+                padding: 1em .5em;
+
+                &:hover {
+                    background-color: $white;
+                    color: $green;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .footer__section--page {
+        .logo {
+            img {
+                display: none;
+
             }
         }
 
+        .input__box--label {
+            display: flex;
+            width: 100%;
+
+        }
+
+        .input__box--label {
+
+            width: 80%;
+
+
+
+
+
+
+
+        }
 
     }
 }
