@@ -65,13 +65,7 @@
       }
     }
     .icons__ul--li {
-      @include mixins.flex-box(flex-start,center, column, wrap);
-
-      ul li {
-        img {
-          width: 10%;
-        }
-      }
+      display: none;
     }
   }
 }

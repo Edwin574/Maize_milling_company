@@ -439,7 +439,7 @@ form button:hover {
   }
   .hero-section p {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .hero-section h1 {
     font-family: "Roboto", sans-serif;
@@ -522,14 +522,7 @@ form button:hover {
     border-bottom: 1px solid black;
   }
   .footer__section--page .icons__ul--li {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .footer__section--page .icons__ul--li ul li img {
-    width: 10%;
+    display: none;
   }
 }
 .navigation-bar {
