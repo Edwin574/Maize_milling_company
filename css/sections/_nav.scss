@@ -6,7 +6,7 @@
   color: $yellow;
   background-color: $green;
   .navbar-flex {
-    @include mixins.flex-box(space-between, center, row, wrap);
+    @include mixins.flex-box(space-between, center, row, nowrap);
     font-weight: bolder;
   }
   button {
@@ -33,6 +33,9 @@
   gap: 1em;
   li:hover {
     color: $white;
+    &:last-child{
+      display: none;
+    }
   }
 }
 .navigation-bar-left {
@@ -41,50 +44,23 @@
   }
 }
 
-
-@media screen and (max-width:415px) {
-  .navigation-bar {
-    color: $yellow;
-    background-color: $green;
-    font-size: 1rem;
-    .navbar-flex {
-      @include mixins.flex-box(space-between, center, row, wrap);
-      font-weight: bolder;
-    }
-    button {
-      cursor: pointer;
-      padding:.6em 1em;
-      border-radius: 20px;
-      border: none;
-      background-color: $yellow;
-      &:hover {
-        background-color: rgb(255, 255, 0.7);
+@media screen and (max-width: 600px) {
+  .navigation-bar-left {
+    ul {
+      li{
+        &:not(:first-child){
+          display: none;
+        }
       }
     }
-    a {
-      color: $yellow;
-      text-decoration: none;
+  }
+  .navigation-bar-right {
+    ul {
+      li{
+        &:not(:last-child){
+          display: none;
+        }
+      }
     }
-  }
-  
-  .navigation-bar ul {
-    list-style-type: none;
-    @include mixins.flex-box(space-between, center, row, nowrap);
-  }
-  .navigation-bar-left {
-    text-align: center;
-    // padding: 5%;
-    @include mixins.flex-box(center, center, row, nowrap);
-    .navbar-left-logo {
-    width: 100%;
-    height: 50px;
-    border-radius: 50%;
-    background-color: transparent;
-    box-shadow: 2px 2px 2px 2px $yellow;
-    }
-  }
-  .navigation-bar-right{
-    padding: 0em;
-    @include mixins.flex-box(center, center, row, nowrap);
   }
 }

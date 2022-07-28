@@ -209,7 +209,7 @@ button:hover {
 }
 
 .shop-main__yellow {
-  background-color: #FFDF2B;
+  background-color: rgb(253, 255, 1);
 }
 
 .shop-container {
@@ -268,6 +268,72 @@ button:hover {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 415px) {
+  .sub-nav {
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1em;
+    font-size: 1rem;
+  }
+  .shop-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    background-color: #FFDF2B;
+  }
+  .shop-container .shop-menu {
+    padding: 0em;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.3em;
+  }
+  .shop-container .shop-menu div {
+    color: white;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    border: none;
+    padding: 0;
+    background-color: #158A43;
+  }
+  .shop-container .shop-container-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .shop-container .shop-container-items .shop-advert {
+    height: 300px;
+    box-shadow: 1px 1px 1px 2px grey;
+    text-align: center;
+  }
+  .shop-container .shop-container-items .shop-advert img {
+    width: 150px;
+  }
+  .shop-container .shop-container-items .shop-advert button {
+    cursor: pointer;
+    padding: 0.8em 1em;
+    background-color: #158A43;
+    color: #FFDF2B;
+    margin: 1em 0em;
+  }
+  .shop-container .shop-container-items .shop-advert h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+}
 .contact-main-section {
   font-weight: bolder;
   color: white;
@@ -436,7 +502,10 @@ button:hover {
   background-color: #FFDF2B;
 }
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 600px) {
+
+
   .section-two-left {
     width: 100%;
   }
@@ -485,7 +554,7 @@ button:hover {
   color: #158A43;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 600px) {
   .section-one {
     display: flex;
     justify-content: space-around;
@@ -538,7 +607,7 @@ button:hover {
   color: #006400;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 600px) {
   .hero-section {
     width: 100%;
     padding: 2em 1em;
@@ -570,6 +639,7 @@ button:hover {
     border-radius: 10px;
   }
 }
+
 footer {
   background-color: #158A43;
 }
@@ -660,7 +730,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   font-weight: bolder;
 }
 .navigation-bar button {
@@ -690,65 +760,16 @@ footer {
 .navigation-bar ul li:hover {
   color: white;
 }
+.navigation-bar ul li:hover:last-child {
+  display: none;
+}
 
-@media screen and (max-width: 415px) {
-  .navigation-bar {
-    color: #FFDF2B;
-    background-color: #158A43;
-    font-size: 1rem;
+@media screen and (max-width: 600px) {
+  .navigation-bar-left ul li:not(:first-child) {
+    display: none;
   }
-  .navigation-bar .navbar-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-weight: bolder;
-  }
-  .navigation-bar button {
-    cursor: pointer;
-    padding: 0.6em 1em;
-    border-radius: 20px;
-    border: none;
-    background-color: #FFDF2B;
-  }
-  .navigation-bar button:hover {
-    background-color: rgb(255, 255, 1);
-  }
-  .navigation-bar a {
-    color: #FFDF2B;
-    text-decoration: none;
-  }
-  .navigation-bar ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .navigation-bar-left {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .navigation-bar-left .navbar-left-logo {
-    width: 100%;
-    height: 50px;
-    border-radius: 50%;
-    background-color: transparent;
-    box-shadow: 2px 2px 2px 2px #FFDF2B;
-  }
-  .navigation-bar-right {
-    padding: 0em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  .navigation-bar-right ul li:not(:last-child) {
+    display: none;
   }
 }
 .about-main--part {
