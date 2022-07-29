@@ -37,7 +37,7 @@
 
         button {
             background: $yellow;
-            
+
 
 
         }
@@ -53,24 +53,23 @@
 
 @media screen and (max-width:415px) {
     .delivery-form {
-        width: 100%; 
-        margin: 0em; 
-        text-align: center; 
+        width: 100%;
+        margin: 0em;
+        text-align: center;
 
 
     }
-    .delivery__form--main {
 
-        // margin: 0 auto;
-        // padding: 0em 4em;
+    .delivery__form--main {
 
         @include mixins.flex-box(space-between, center, row, nowrap);
         gap: 1em;
-        // padding: 3em;
 
-label{
-    font-size:0.9rem;
-}
+
+        label {
+            font-size: 0.9rem;
+        }
+
         h2 {
             font-size: 1rem;
             font-weight: bold;
@@ -87,19 +86,21 @@ label{
 
         }
     }
+
     sections__delivery--form {
         background-color: $yellow;
         // padding: 3em 0;
     }
 }
-.icons__ul--li{
-    // @include  mixins.flex-box(row,wrap)
-ul{
-    @include mixins.flex-box(center,center,row,nowrap);
-    gap:2em;
-    text-align:center;
+
+.icons__ul--li {
+
+    ul {
+        @include mixins.flex-box(center, center, row, wrap);
+        gap: 2em;
+    }
 }
-}
-.footer-list-item{
-    width:50%;
+
+.footer-list-item {
+    width: 50%;
 }
