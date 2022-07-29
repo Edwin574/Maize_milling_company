@@ -3,6 +3,7 @@
 @use "../overalstyles/inheritance";
 
 
+
 .input__box--label {
   display: flex;
   align-items: center;
@@ -23,33 +24,73 @@
 }
 
 
+.sections__selling--form {
+
+
 button {
   @extend %button;
   border: none;
   border-radius: 10px;
+
+  padding: 5em 0;
+
   background-color: $yellow;
-  font-weight: bolder;
 
-  &:hover {
-    background-color: $white;
-    color: $green;
+  .form__image {
+    @include mixins.flex-box(center, center, row, wrap);
+    .form {
+      width: 50%;
+
+      form {
+        background-color: $green;
+        color: $yellow;
+        width: 90%;
+        padding: 2em;
+        border-radius: 6px;
+      }
+
+      button {
+        @extend %button;
+        // width: 20%;
+        border: none;
+        border-radius: 10px;
+        background-color: $yellow;
+        font-weight: bolder;
+
+        &:hover {
+          background-color: $white;
+          color: $green;
+        }
+      }
+
+      .input__box--label {
+        display: flex;
+        align-items: center;
+        padding-bottom: 1em;
+        font-weight: bold;
+
+        label {
+          display: block;
+          width: 20%;
+        }
+        input {
+          width: 70%;
+          padding: 1em 0;
+          border-radius: 4px;
+          border: none;
+        }
+      }
+
+      .image {
+        width: 100%;
+      }
+    }
   }
+
+
+
 }
 
-.form {
-  width: 50%;
-
-  form {
-    background-color: $green;
-    color: $yellow;
-    width: 90%;
-    padding: 2em;
-    border-radius: 6px;
-  }
-}
-
-.form {
-  width: 50%;
 
   form {
     background-color: $green;
@@ -58,7 +99,10 @@ button {
     padding: 2em;
     border-radius: 6px;
 
-  }
+
+@media screen and (max-width:600px) {
+  .form__image {
+    display: block;
 
 
   button {
@@ -73,17 +117,29 @@ button {
 
     &:hover {
       background-color: $white;
+
+    .submit {
+      text-align: center;
+
       color: $green;
+      padding: 1em 0.5em;
     }
+
 
   }
 
 
 }
 
-.image {
-  width: 50%;
-}
+    .form {
+      display: block;
+      width: 100%;
+    }
+
+
+    .image {
+      display: none;
+    }
 
 .form__image {
   @include mixins.flex-box(center, center, row, wrap);
@@ -92,13 +148,7 @@ button {
     text-align: center;
     color: $green;
     padding: 1em 0.5em;
+
   }
-
-}
-
-.sections__selling--form {
-
-  padding: 5em 0;
-  background-color: $yellow;
 
 }
