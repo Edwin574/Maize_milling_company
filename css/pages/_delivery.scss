@@ -33,12 +33,16 @@
         }
     }
 
-    .btn {
+   .submit{
 
         button {
-            background: $yellow;
-
-
+            // background: $yellow;
+            padding:1em 6em;
+          
+           .delivery-form{
+            // padding:1em 6em;
+        }
+        
 
         }
     }
@@ -82,7 +86,9 @@
         button {
             background: $yellow;
             // margin: 0 20em;
-
+.delivery-form{
+    padding:1em 6em;
+}
 
         }
     }
