@@ -15,7 +15,7 @@
 .shop-container {
     @include mixins.flex-box(center, flex-start, row, nowrap);
     gap: .5em;
-    // background-color: $yellow;
+  
     padding: 1.5em 0em;
 
     .shop-menu {
@@ -24,7 +24,6 @@
         @include mixins.flex-box(flex-end, flex-end, column, nowrap);
         flex: .5;
 
-        // width: fit-content;
         div {
             font-size: 1.5rem;
             width: 100%;
