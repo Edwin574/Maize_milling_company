@@ -23,7 +23,7 @@ a {
   list-style-type: none;
 }
 
-.navigation-bar button, .hero-section button, .section-one .--card-one button, .section__signup--form form button, .shop-container .shop-container-items .shop-advert button, .sections__selling--form .form__image .form button {
+.navigation-bar button, .hero-section button, .section-one .--card-one button, .section__signup--form form button, .contact-main-section-form form button, .shop-container .shop-container-items .shop-advert button, .sections__selling--form button, .sections__selling--form button .form__image .form button {
   cursor: pointer;
   padding: 0.8em 2em;
 }
@@ -34,7 +34,6 @@ a {
   background-color: transparent;
   box-shadow: 2px 2px 2px 2px #FFDF2B;
 }
-
 
 .input__box--label {
   display: flex;
@@ -48,94 +47,112 @@ a {
 }
 
 .input__box--label input {
-  /* width: 70%; */
   padding: 1em 0;
   border-radius: 4px;
   border: none;
 }
 
-button {
+.sections__selling--form button {
   border: none;
-  border-radius: 10px;  }
-
-.sections__selling--form {
+  border-radius: 10px;
   padding: 5em 0;
-
   background-color: #FFDF2B;
 }
-.sections__selling--form .form__image {
+.sections__selling--form button .form__image {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.sections__selling--form .form__image .form {
+.sections__selling--form button .form__image .form {
   width: 50%;
 }
-.sections__selling--form .form__image .form form {
+.sections__selling--form button .form__image .form form {
   background-color: #158A43;
   color: #FFDF2B;
   width: 90%;
   padding: 2em;
   border-radius: 6px;
 }
-
-
-
-.sections__selling--form .form__image .form button {
-
+.sections__selling--form button .form__image .form button {
   border: none;
   border-radius: 10px;
   background-color: #FFDF2B;
   font-weight: bolder;
-
-  color: #158A43;
-  /* margin: 2.8em 19em; */
-  padding: 1em 0.5em;
-
 }
-.sections__selling--form .form__image .form button:hover {
+.sections__selling--form button .form__image .form button:hover {
   background-color: white;
   color: #158A43;
 }
-.sections__selling--form .form__image .form .input__box--label {
+.sections__selling--form button .form__image .form .input__box--label {
   display: flex;
   align-items: center;
   padding-bottom: 1em;
   font-weight: bold;
 }
-.sections__selling--form .form__image .form .input__box--label label {
+.sections__selling--form button .form__image .form .input__box--label label {
   display: block;
   width: 20%;
 }
-.sections__selling--form .form__image .form .input__box--label input {
+.sections__selling--form button .form__image .form .input__box--label input {
   width: 70%;
   padding: 1em 0;
   border-radius: 4px;
   border: none;
 }
-.sections__selling--form .form__image .form .image {
+.sections__selling--form button .form__image .form .image {
   width: 100%;
 }
-
+.sections__selling--form form {
+  background-color: #158A43;
+  color: #FFDF2B;
+  width: 100%;
+  padding: 2em;
+  border-radius: 6px;
+}
 @media screen and (max-width: 600px) {
-  .form__image {
+  .sections__selling--form form .form__image {
     display: block;
   }
-  .form__image .submit {
+  .sections__selling--form form .form__image button {
+    border: none;
+    border-radius: 10px;
+    background-color: #FFDF2B;
+    font-weight: bolder;
+    color: #158A43;
+    margin: 2.8em 19em;
+    padding: 1em 0.5em;
+  }
+  .sections__selling--form form .form__image button:hover {
+    background-color: white;
+  }
+  .sections__selling--form form .form__image button:hover .submit {
     text-align: center;
     color: #158A43;
     padding: 1em 0.5em;
   }
-  .form__image .form {
+  .sections__selling--form form .form__image .form {
     display: block;
     width: 100%;
   }
-  .form__image .image {
+  .sections__selling--form form .form__image .image {
     display: none;
   }
+  .sections__selling--form form .form__image .form__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sections__selling--form form .form__image .form__image .submit {
+    text-align: center;
+    color: #158A43;
+    padding: 1em 0.5em;
+  }
 }
+
 .delivery-form {
   background: #158A43;
   width: 70%;
@@ -403,6 +420,10 @@ button {
 .contact-main-section-form form input {
   padding: 1em;
 }
+.contact-main-section-form form button {
+  background-color: yellow;
+  border-radius: 10px;
+}
 
 @media screen and (max-width: 600px) {
   .contact-main-section--address {
@@ -454,10 +475,12 @@ button {
   .contact-main-section-form form input {
     padding: 1em;
   }
+  .contact-main-section-form form .contact-submit {
+    padding: 1em 2em;
+  }
 }
 .input__box--label {
   display: flex;
-  width: 80%;
   cursor: pointer;
 }
 .input__box--label:hover {
@@ -476,6 +499,7 @@ button {
   padding: 1em 4em;
   border-radius: 4px;
   border: none;
+  text-align: center;
 }
 .section__signup--form form h2 {
   color: #000;
@@ -485,26 +509,17 @@ button {
   padding: 1em 0;
 }
 .section__signup--form form button {
-  width: 20%;
   border: none;
+  border-radius: 10px;
 }
-.section__signup--form form button .input__box--label {
+.section__signup--form form:hover {
+  background-color: white;
+  color: #158A43;
+}
+.section__signup--form form .input__box--label {
   display: flex;
   width: 80%;
   cursor: pointer;
-  border-radius: 10px;
-  background-color: #FFDF2B;
-  font-weight: bolder;
-  color: #158A43;
-  margin: 2.8em 19em;
-  padding: 1em 0.5em;
-}
-.section__signup--form form button .input__box--label:hover {
-  color: #FFDF2B;
-}
-.section__signup--form form button .input__box--label:hover {
-  background-color: white;
-  color: #158A43;
 }
 
 @media (max-width: 600px) {
@@ -513,6 +528,17 @@ button {
     margin: 0;
   }
   .section__signup--form form {
+    width: 100%;
+  }
+  .section__signup--form form button {
+    width: 0%;
+  }
+  .section__signup--form form .input__box--label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: 100%;
   }
   .input__box--label {

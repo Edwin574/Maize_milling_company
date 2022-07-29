@@ -108,8 +108,13 @@
         display: block;
 
 
+
         .ok {
           @extend %button;
+
+        button {
+          
+
           border: none;
           border-radius: 10px;
           background-color: $yellow;
