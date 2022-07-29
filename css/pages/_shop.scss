@@ -9,13 +9,13 @@
 }
 
 .shop-main__yellow {
-    background-color: rgb(253, 255, 1);
+    background-color: $green;
 }
 
 .shop-container {
     @include mixins.flex-box(center, flex-start, row, nowrap);
     gap: .5em;
-    background-color: $yellow;
+    // background-color: $yellow;
     padding: 1.5em 0em;
 
     .shop-menu {
@@ -32,8 +32,8 @@
             border-bottom: 1px solid black;
 
             &:hover {
-                background-color: $green;
-                color: $yellow;
+                background-color: $yellow;
+                color: $green;
             }
         }
     }
@@ -47,6 +47,7 @@
         .shop-advert {
             box-shadow: 1px 1px 1px 2px grey;
             text-align: center;
+            background-color: $yellow;
 
             // margin-top:1.5em;
             button {

@@ -209,7 +209,7 @@ button:hover {
 }
 
 .shop-main__yellow {
-  background-color: rgb(253, 255, 1);
+  background-color: #158A43;
 }
 
 .shop-container {
@@ -219,7 +219,6 @@ button:hover {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 0.5em;
-  background-color: #FFDF2B;
   padding: 1.5em 0em;
 }
 .shop-container .shop-menu {
@@ -239,8 +238,8 @@ button:hover {
   border-bottom: 1px solid black;
 }
 .shop-container .shop-menu div:hover {
-  background-color: #158A43;
-  color: #FFDF2B;
+  background-color: #FFDF2B;
+  color: #158A43;
 }
 .shop-container .shop-container-items {
   flex: 2;
@@ -254,6 +253,7 @@ button:hover {
 .shop-container .shop-container-items .shop-advert {
   box-shadow: 1px 1px 1px 2px grey;
   text-align: center;
+  background-color: #FFDF2B;
 }
 .shop-container .shop-container-items .shop-advert button {
   background-color: #158A43;
