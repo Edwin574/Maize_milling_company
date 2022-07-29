@@ -66,3 +66,62 @@
     }
   }
 }
+@media screen and (max-width:600px){
+  .contact-main-section--address {
+    display: block;
+  
+    .contact--physical-address {
+      text-align: center;
+      flex: 1;
+  
+      h2 {
+        font-size: 1.5rem;
+      }
+  
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  
+    .contact--reach-us {
+      flex: 1;
+      text-align: center;
+  
+      h2 {
+        font-size: 2rem;
+      }
+  
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+  .contact-main-section-form {
+    @include mixins.flex-box(center, center, row, wrap);
+  
+  
+    form {
+      text-align: center;
+      border:2px solid yellow;
+      margin: 1em auto;
+      
+      h2 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+  
+      label {
+        font-size: 1rem;
+        margin-right: 1.5em;
+      }
+      div{
+      text-align:center;
+      }
+  
+      input {
+        padding: 1em;
+      }
+    }
+  }
+}

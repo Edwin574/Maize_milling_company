@@ -7,100 +7,27 @@ footer{
     background-color: $green;
 
 }
-.logo {
-    padding: 0em;
-    img {
-        @extend %company-logo;
-    }
-}
-
-.footer-list-item {
-    ul {
-        @extend %listitems;
-        li{
-            padding-bottom:.5em;
-        }
-    }
-}
-
-.icons__ul--li {
-    @include mixins.flex-box(center, center, row, nowrap);
-    gap: 2em;
-
-    ul {
-        @extend %listitems;
-
-        cursor: pointer;
-
-        & :hover {
-            color: $yellow;
-        }
-
-        li {
-            @include mixins.flex-box(center, center, row, nowrap);
-
-            img {
-                width: 10%;
-            }
-        }
-    }
-}
 
 .footer__section--page {
-    padding: 2em 0em;
-    @include mixins.flex-box(space-around, center, row, wrap);
-    @extend %listitems;
+    padding: 3em 0em;
+    @include mixins.flex-box(center, center, row,nowrap);
+    text-align: center;
     color: $yellow;
     font-weight: bold;
     font-size: 1rem;
     text-transform:uppercase;
-
+.navbar-left-logo{
+    @extend %company-logo;
+}
     ul {
         cursor: pointer;
-
+        @extend %listitems;
         & :hover {
             color: white;
-
-            li {
-                padding: 3em 0;
-            }
         }
-    }
-
-    .footer-items {
-        @include mixins.flex-box(center, center, row, nowrap);
-        gap: 15em;
-  
-        
-           
-    
     }
 }
 
-@media screen and (max-width: 500px) {
-    footer {
-        background-color: $green;
-        
-
-        .logo {
-            img {
-                display:none;
-
-            }
-        }
-    }
-
-    .footer__section--page {
-        // text-align: center;
-        @include mixins.flex-box(space-between,center, row, wrap);
-        // gap:1em;
-
-        .footer-list-item {
-            ul li {
-                border-bottom: 1px solid black;
-            }
-        }
-
-        
-    }
+@media screen and (max-width: 600px) {
+  
 }

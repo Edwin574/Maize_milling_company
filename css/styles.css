@@ -19,7 +19,7 @@ a {
   color: #FFDF2B;
 }
 
-.navigation-bar ul, .footer-list-item ul, .icons__ul--li ul, .footer__section--page {
+.navigation-bar ul, .footer__section--page ul {
   list-style-type: none;
 }
 
@@ -28,7 +28,7 @@ a {
   padding: 0.8em 2em;
 }
 
-.navigation-bar-left .navbar-left-logo, .logo img {
+.navigation-bar-left .navbar-left-logo, .footer__section--page .navbar-left-logo {
   width: 50%;
   border-radius: 50%;
   background-color: transparent;
@@ -156,7 +156,7 @@ button:hover {
   padding: 3em 0;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 600px) {
   .delivery-form {
     width: 100%;
     margin: 0em;
@@ -391,6 +391,57 @@ button:hover {
   padding: 1em;
 }
 
+@media screen and (max-width: 600px) {
+  .contact-main-section--address {
+    display: block;
+  }
+  .contact-main-section--address .contact--physical-address {
+    text-align: center;
+    flex: 1;
+  }
+  .contact-main-section--address .contact--physical-address h2 {
+    font-size: 1.5rem;
+  }
+  .contact-main-section--address .contact--physical-address p {
+    font-size: 1.5rem;
+  }
+  .contact-main-section--address .contact--reach-us {
+    flex: 1;
+    text-align: center;
+  }
+  .contact-main-section--address .contact--reach-us h2 {
+    font-size: 2rem;
+  }
+  .contact-main-section--address .contact--reach-us p {
+    font-size: 1.5rem;
+  }
+  .contact-main-section-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contact-main-section-form form {
+    text-align: center;
+    border: 2px solid yellow;
+    margin: 1em auto;
+  }
+  .contact-main-section-form form h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .contact-main-section-form form label {
+    font-size: 1rem;
+    margin-right: 1.5em;
+  }
+  .contact-main-section-form form div {
+    text-align: center;
+  }
+  .contact-main-section-form form input {
+    padding: 1em;
+  }
+}
 .input__box--label {
   display: flex;
   width: 80%;
@@ -638,45 +689,14 @@ footer {
   background-color: #158A43;
 }
 
-.logo {
-  padding: 0em;
-}
-.footer-list-item ul li {
-  padding-bottom: 0.5em;
-}
-
-.icons__ul--li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 2em;
-}
-.icons__ul--li ul {
-  cursor: pointer;
-}
-.icons__ul--li ul :hover {
-  color: #FFDF2B;
-}
-.icons__ul--li ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-.icons__ul--li ul li img {
-  width: 10%;
-}
-
 .footer__section--page {
-  padding: 2em 0em;
+  padding: 3em 0em;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-align: center;
   color: #FFDF2B;
   font-weight: bold;
   font-size: 1rem;
@@ -688,36 +708,7 @@ footer {
 .footer__section--page ul :hover {
   color: white;
 }
-.footer__section--page ul :hover li {
-  padding: 3em 0;
-}
-.footer__section--page .footer-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 15em;
-}
 
-@media screen and (max-width: 500px) {
-  footer {
-    background-color: #158A43;
-  }
-  footer .logo img {
-    display: none;
-  }
-  .footer__section--page {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .footer__section--page .footer-list-item ul li {
-    border-bottom: 1px solid black;
-  }
-}
 .navigation-bar {
   color: #FFDF2B;
   background-color: #158A43;
@@ -754,10 +745,8 @@ footer {
   flex-wrap: nowrap;
   gap: 1em;
 }
-.navigation-bar ul li:hover {
-  color: white;
-}
-.navigation-bar ul li:hover:last-child {
+
+.navigation-bar-right ul li:last-child {
   display: none;
 }
 
@@ -765,8 +754,11 @@ footer {
   .navigation-bar-left ul li:not(:first-child) {
     display: none;
   }
-  .navigation-bar-right ul li:not(:last-child) {
+  .navigation-bar-right ul li {
     display: none;
+  }
+  .navigation-bar-right ul li:last-child {
+    display: block;
   }
 }
 .about-main--part {

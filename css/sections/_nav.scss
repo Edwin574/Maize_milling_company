@@ -31,16 +31,21 @@
   @extend %listitems;
   @include mixins.flex-box(space-between, center, row, nowrap);
   gap: 1em;
-  li:hover {
-    color: $white;
-    &:last-child{
-      display: none;
-    }
-  }
+  
 }
 .navigation-bar-left {
   .navbar-left-logo {
     @extend %company-logo;
+  }
+  
+}
+.navigation-bar-right{
+  ul {
+    li{
+      &:last-child{
+        display: none;
+      }
+    }
   }
 }
 
@@ -57,8 +62,9 @@
   .navigation-bar-right {
     ul {
       li{
-        &:not(:last-child){
-          display: none;
+        display: none;
+        &:last-child{
+          display: block;
         }
       }
     }
