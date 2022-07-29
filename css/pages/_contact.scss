@@ -64,8 +64,16 @@
     input {
       padding: 1em;
     }
+    button{
+      @extend %button;
+      background-color:yellow;
+      border-radius: 10px;
+    }
+    
   }
 }
+
+
 @media screen and (max-width:600px){
   .contact-main-section--address {
     display: block;
@@ -121,6 +129,9 @@
   
       input {
         padding: 1em;
+      }
+      .contact-submit{
+        padding: 1em 2em;
       }
     }
   }
