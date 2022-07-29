@@ -23,7 +23,7 @@ a {
   list-style-type: none;
 }
 
-.navigation-bar button, .hero-section button, .section-one .--card-one button, .section__signup--form form button, .shop-container .shop-container-items .shop-advert button, button, .form button {
+.navigation-bar button, .hero-section button, .section-one .--card-one button, .section__signup--form form button, .shop-container .shop-container-items .shop-advert button, .sections__selling--form .form__image .form button {
   cursor: pointer;
   padding: 0.8em 2em;
 }
@@ -35,93 +35,74 @@ a {
   box-shadow: 2px 2px 2px 2px #FFDF2B;
 }
 
-.input__box--label {
-  display: flex;
-  align-items: center;
-  padding-bottom: 1em;
-  font-weight: bold;
-}
-.input__box--label label {
-  display: block;
-  width: 20%;
-}
-
-.input__box--label input {
-  width: 70%;
-  padding: 1em 0;
-  border-radius: 4px;
-  border: none;
-}
-
-button {
-  border: none;
-  border-radius: 10px;
+.sections__selling--form {
+  padding: 5em 0;
   background-color: #FFDF2B;
-  font-weight: bolder;
 }
-button:hover {
-  background-color: white;
-  color: #158A43;
-}
-
-.form {
-  width: 50%;
-}
-.form form {
-  background-color: #158A43;
-  color: #FFDF2B;
-  width: 90%;
-  padding: 2em;
-  border-radius: 6px;
-}
-
-.form {
-  width: 50%;
-}
-.form form {
-  background-color: #158A43;
-  color: #FFDF2B;
-  width: 90%;
-  padding: 2em;
-  border-radius: 6px;
-}
-.form button {
-  width: 20%;
-  border: none;
-  border-radius: 10px;
-  background-color: #FFDF2B;
-  font-weight: bolder;
-  color: #158A43;
-  margin: 2.8em 19em;
-  padding: 1em 0.5em;
-}
-.form button:hover {
-  background-color: white;
-  color: #158A43;
-}
-
-.image {
-  width: 50%;
-}
-
-.form__image {
+.sections__selling--form .form__image {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.form__image .submit {
-  text-align: center;
-  color: #158A43;
-  padding: 1em 0.5em;
+.sections__selling--form .form__image .form {
+  width: 50%;
 }
-
-.sections__selling--form {
-  padding: 5em 0;
+.sections__selling--form .form__image .form form {
+  background-color: #158A43;
+  color: #FFDF2B;
+  width: 90%;
+  padding: 2em;
+  border-radius: 6px;
+}
+.sections__selling--form .form__image .form button {
+  border: none;
+  border-radius: 10px;
   background-color: #FFDF2B;
+  font-weight: bolder;
+}
+.sections__selling--form .form__image .form button:hover {
+  background-color: white;
+  color: #158A43;
+}
+.sections__selling--form .form__image .form .input__box--label {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+  font-weight: bold;
+}
+.sections__selling--form .form__image .form .input__box--label label {
+  display: block;
+  width: 20%;
+}
+.sections__selling--form .form__image .form .input__box--label input {
+  width: 70%;
+  padding: 1em 0;
+  border-radius: 4px;
+  border: none;
+}
+.sections__selling--form .form__image .form .image {
+  width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .form__image {
+    display: block;
+  }
+  .form__image .submit {
+    text-align: center;
+    color: #158A43;
+    padding: 1em 0.5em;
+  }
+  .form__image .form {
+    display: block;
+    width: 100%;
+  }
+  .form__image .image {
+    display: none;
+  }
+}
 .delivery-form {
   background: #158A43;
   width: 70%;
