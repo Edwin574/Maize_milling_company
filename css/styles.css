@@ -47,7 +47,7 @@ a {
 }
 
 .input__box--label input {
-  width: 70%;
+  /* width: 70%; */
   padding: 1em 0;
   border-radius: 4px;
   border: none;
@@ -86,13 +86,12 @@ button:hover {
   border-radius: 6px;
 }
 .form button {
-  width: 20%;
   border: none;
   border-radius: 10px;
   background-color: #FFDF2B;
   font-weight: bolder;
   color: #158A43;
-  margin: 2.8em 19em;
+  /* margin: 2.8em 19em; */
   padding: 1em 0.5em;
 }
 .form button:hover {
@@ -493,16 +492,16 @@ button:hover {
   color: #158A43;
 }
 
-@media screen and (max-width: 500px) {
-  .footer__section--page footer-list-item {
-    padding: 0;
+@media (max-width: 600px) {
+  .section__signup--form {
+    padding: 0em;
+    margin: 0;
   }
-  .input__box--label {
-    display: flex;
+  .section__signup--form form {
     width: 100%;
   }
   .input__box--label {
-    width: 80%;
+    display: flex;
   }
 }
 .section-two-left {
