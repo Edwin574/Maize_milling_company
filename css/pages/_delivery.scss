@@ -1,0 +1,106 @@
+@use "../overalstyles/inheritance";
+@use "../overalstyles/variables" as *;
+@use "../overalstyles/mixins";
+
+.delivery-form {
+    background: $green;
+    width: 70%;
+    color: $yellow;
+    margin: 2em auto;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 2rem;
+
+    .delivery__form--main {
+
+        margin: 0 auto;
+        width: 50%;
+        // padding: 0em 4em;
+
+        @include mixins.flex-box(space-between, center, row, nowrap);
+        // padding: 3em;
+
+
+
+        label {
+            display: block;
+        }
+
+        h2 {
+            font-size: 6rem;
+            font-weight: bold;
+
+        }
+    }
+
+    .btn {
+
+        button {
+            background: $yellow;
+
+
+
+        }
+    }
+}
+
+.sections__delivery--form {
+    background-color: $yellow;
+    padding: 3em 0;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .delivery-form {
+        width: 100%;
+        margin: 0em;
+        text-align: center;
+
+
+    }
+
+    .delivery__form--main {
+
+        @include mixins.flex-box(space-between, center, row, nowrap);
+        gap: 1em;
+
+
+        label {
+            font-size: 0.9rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+            font-weight: bold;
+
+        }
+    }
+
+    .btn {
+
+        button {
+            background: $yellow;
+            // margin: 0 20em;
+
+
+        }
+    }
+
+    sections__delivery--form {
+        background-color: $yellow;
+        // padding: 3em 0;
+    }
+}
+
+.icons__ul--li {
+
+    ul {
+        @include mixins.flex-box(center, center, row, wrap);
+        gap: 2em;
+    }
+}
+
+.footer-list-item {
+    width: 50%;
+}

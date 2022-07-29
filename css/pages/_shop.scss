@@ -1,0 +1,132 @@
+@use "../overalstyles/inheritance";
+@use "../overalstyles/mixins";
+@use "../overalstyles/variables" as *;
+
+.sub-nav {
+    border: 2px solid black;
+    @include mixins.flex-box(space-around, center, row, nowrap);
+    background-color: lightgrey;
+}
+
+.shop-main__yellow {
+    background-color: $green;
+}
+
+.shop-container {
+    @include mixins.flex-box(center, flex-start, row, nowrap);
+    gap: .5em;
+    // background-color: $yellow;
+    padding: 1.5em 0em;
+
+    .shop-menu {
+        text-align: center;
+        border: 1px solid black;
+        @include mixins.flex-box(flex-end, flex-end, column, nowrap);
+        flex: .5;
+
+        // width: fit-content;
+        div {
+            font-size: 1.5rem;
+            width: 100%;
+            padding: 2.3em 0em;
+            border-bottom: 1px solid black;
+
+            &:hover {
+                background-color: $yellow;
+                color: $green;
+            }
+        }
+    }
+
+    .shop-container-items {
+        flex: 2;
+
+        @include mixins.flex-box(space-between, center, row, wrap);
+        gap: 1em;
+
+        .shop-advert {
+            box-shadow: 1px 1px 1px 2px grey;
+            text-align: center;
+            background-color: $yellow;
+
+            // margin-top:1.5em;
+            button {
+                @extend %button;
+                background-color: $green;
+                color: $yellow;
+                margin: 1em 0em;
+
+                &:hover {
+                    background-color: white;
+                    color: $green;
+                }
+
+            }
+
+            h3 {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:600px) {
+    .sub-nav {
+        border: none;
+        @include mixins.flex-box(space-around, center, row, nowrap);
+        padding: 1em;
+        font-size: 1rem;
+    }
+
+    .shop-container {
+        @include mixins.flex-box(center,flex-start,column, wrap);
+        gap: .5em;
+        background-color: $yellow;
+
+        .shop-menu {
+            padding: 0em;
+            border:none;
+            @include mixins.flex-box(center, center,row, nowrap);
+            gap:1.3em;
+
+            div {
+                color: green;
+                font-size: .8rem;
+                padding: 0;
+                border: none;           
+            }
+        }
+
+        .shop-container-items {
+           
+
+            @include mixins.flex-box(space-between, center, row, wrap);
+            gap: 1em;
+            
+
+            .shop-advert {
+                height: 300px;
+                box-shadow: 1px 1px 1px 2px grey;
+                text-align: center;
+                img{
+                    width: 150px;
+                }
+                button {
+                    cursor: pointer;
+                    padding:.8em 1em;
+                    background-color: $green;
+                    color: $yellow;
+                    margin: 1em 0em;
+
+                }
+
+                h3 {
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+@use "../overalstyles/variables" as *;
+@use "../overalstyles/mixins";
+@use "../overalstyles/inheritance";
+
+
+
+
+
+.input__box--label {
+    display: flex;
+    width: 80%;
+
+    cursor: pointer;
+
+    &:hover {
+        color: $yellow;
+    }
+
+}
+
+.section__signup--form {
+    background: $white;
+    padding: 3em 0;
+
+
+    form {
+        background-color: $green;
+        width: 50%;
+        color: $yellow;
+        margin: 0 auto;
+        padding: 1em 4em;
+        border-radius: 4px;
+        border: none;
+
+        h2 {
+            color: #000;
+            text-align: center;
+
+        }
+
+        label {
+            padding: 1em 0;
+        }
+
+        button {
+            @extend %button;
+            width: 20%;
+            border: none;
+
+            .input__box--label {
+                display: flex;
+                width: 80%;
+
+                cursor: pointer;
+
+                &:hover {
+                    color: $yellow;
+                }
+
+                border-radius: 10px;
+                background-color: $yellow;
+                font-weight: bolder;
+                color: $green;
+                margin: 2.8em 19em;
+                padding: 1em .5em;
+
+                &:hover {
+                    background-color: $white;
+                    color: $green;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .footer__section--page {
+
+        footer-list-item{
+            padding:0;
+        }
+
+
+    }
+
+    .input__box--label {
+        display: flex;
+        width: 100%;
+
+    }
+
+    .input__box--label {
+
+        width: 80%;
+
+
+
+
+
+
+
+    }
+
+
+}

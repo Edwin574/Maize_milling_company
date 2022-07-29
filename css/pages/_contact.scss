@@ -1,0 +1,127 @@
+@use "../overalstyles/inheritance";
+@use "../overalstyles/mixins";
+@use "../overalstyles/variables" as *;
+
+
+.contact-main-section {
+  font-weight: bolder;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../images/selling-background.jpg") no-repeat center center/cover;
+
+}
+
+.contact-main-section--address {
+  @include mixins.flex-box(space-around, center, row, wrap);
+
+  .contact--physical-address {
+    text-align: center;
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .contact--reach-us {
+    flex: 1;
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.contact-main-section-form {
+  @include mixins.flex-box(center, center, row, wrap);
+
+
+  form {
+    padding: 2em;
+    // width: 50%;
+
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    label {
+      font-size: 1.5rem;
+      margin-right: 2em;
+    }
+    div{
+    text-align:center;
+    }
+
+    input {
+      padding: 1em;
+    }
+  }
+}
+@media screen and (max-width:600px){
+  .contact-main-section--address {
+    display: block;
+  
+    .contact--physical-address {
+      text-align: center;
+      flex: 1;
+  
+      h2 {
+        font-size: 1.5rem;
+      }
+  
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  
+    .contact--reach-us {
+      flex: 1;
+      text-align: center;
+  
+      h2 {
+        font-size: 2rem;
+      }
+  
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+  .contact-main-section-form {
+    @include mixins.flex-box(center, center, row, wrap);
+  
+  
+    form {
+      text-align: center;
+      border:2px solid yellow;
+      margin: 1em auto;
+      
+      h2 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+  
+      label {
+        font-size: 1rem;
+        margin-right: 1.5em;
+      }
+      div{
+      text-align:center;
+      }
+  
+      input {
+        padding: 1em;
+      }
+    }
+  }
+}

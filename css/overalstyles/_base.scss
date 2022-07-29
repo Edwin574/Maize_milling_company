@@ -1,0 +1,22 @@
+@use "../overalstyles/variables" as *;
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+body{
+    font-family: $bodyfont;
+    
+}
+a{
+    text-decoration: none;
+
+    color: $yellow;
+}
+
+

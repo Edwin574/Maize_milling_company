@@ -1,0 +1,71 @@
+@use "../overalstyles/inheritance";
+@use "../overalstyles/mixins";
+@use "../overalstyles/variables" as *;
+
+
+.section-one{
+    @include mixins.flex-box(space-around,center,row,wrap);
+    
+    background-color: $green;
+    padding: 3em 0em;
+    .--card-one{
+        text-align: center;
+        background-color: $yellow;
+        box-shadow: 2px 2px 2px black;
+        border-radius: 10px;
+        padding: 2em;
+
+        img{
+            width: 50%;
+            height: 50%;
+            
+        }
+        h3{
+            font-size: 1.8rem;
+        }
+        p{
+            font: 1.6rem;
+            color: $green;
+            font-weight: bolder;
+        }
+        button{
+            @extend %button;
+            width: 90%;
+            border-radius: 10px;
+            background-color: $green;
+            color:$white;
+            margin: 2.8em 0em;
+            padding: 1em .5em;
+            &:hover{
+                background-color: $yellow;
+                color: $green;
+            }
+        }
+
+    }
+}
+@media screen and(max-width:600px){
+    .section-one{
+        @include mixins.flex-box(space-around,center,row,wrap);
+        gap:2em;
+        background-color: $green;
+        padding: 2em 0em;
+        .--card-one{
+            padding: 1em;
+    
+            img{
+                width: 40%;
+                height: 40%;
+                
+            }
+            h3{
+                font-size: 1.5rem;
+            }
+            p{
+                font: 1.3rem;
+                color: $green;
+                font-weight: bolder;
+            }
+        }
+    }
+}
