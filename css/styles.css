@@ -708,6 +708,11 @@ footer {
   color: white;
 }
 
+@media screen and (max-width: 600px) {
+  .footer__section--page {
+    font-size: 0.7rem;
+  }
+}
 .navigation-bar {
   color: #FFDF2B;
   background-color: #158A43;
