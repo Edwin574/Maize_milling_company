@@ -170,9 +170,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 2em;
-  text-align: center;
 }
 
 .footer-list-item {
@@ -476,14 +475,14 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .footer__section--page .logo img {
-    display: none;
+  .footer__section--page footer-list-item {
+    padding: 0;
   }
-  .footer__section--page .input__box--label {
+  .input__box--label {
     display: flex;
     width: 100%;
   }
-  .footer__section--page .input__box--label {
+  .input__box--label {
     width: 80%;
   }
 }
