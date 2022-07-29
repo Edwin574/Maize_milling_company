@@ -27,7 +27,7 @@
 .sections__selling--form {
 
 
-  button {
+  .ok {
     @extend %button;
     border: none;
     border-radius: 10px;
@@ -52,7 +52,7 @@
 
         button {
           @extend %button;
-          // width: 20%;
+
           border: none;
           border-radius: 10px;
           background-color: $yellow;
@@ -62,6 +62,7 @@
             background-color: $white;
             color: $green;
           }
+
         }
 
         .input__box--label {
@@ -107,8 +108,13 @@
         display: block;
 
 
+
+        .ok {
+          @extend %button;
+
         button {
           
+
           border: none;
           border-radius: 10px;
           background-color: $yellow;
@@ -120,12 +126,7 @@
           &:hover {
             background-color: $white;
 
-            .submit {
-              text-align: center;
-
-              color: $green;
-              padding: 1em 0.5em;
-            }
+            
 
 
           }
@@ -146,11 +147,15 @@
         .form__image {
           @include mixins.flex-box(center, center, row, wrap);
 
-          .submit {
+          .selling-submit {
+            padding: 1em 6em;
+         
+
+         
             text-align: center;
             color: $green;
             padding: 1em 0.5em;
-
+         
           }
         }
       }
