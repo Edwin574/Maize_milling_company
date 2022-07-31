@@ -5,6 +5,8 @@
 .navigation-bar {
   color: $yellow;
   background-color: $green;
+  position: fixed;
+  width: 100%;
   .navbar-flex {
     @include mixins.flex-box(space-between, center, row, nowrap);
     font-weight: bolder;
@@ -50,6 +52,12 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .navigation-flex{
+    ul:hover{
+      display: block;
+    }
+  }
   .navigation-bar-left {
     ul {
       li{

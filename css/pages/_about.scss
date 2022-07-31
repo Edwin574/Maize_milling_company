@@ -7,7 +7,10 @@
 
 .about-description {
   @include mixins.flex-box(space-between, center, row, nowrap);
-  padding: 2em 0em;
+  padding-top:8em;
+  padding-bottom: 0em;
+  position: static;
+  
 
   .about-description__yellow {
     // width: 50%;
@@ -90,7 +93,7 @@
 @media screen and (max-width:600px) {
   .about-description {
     display: block;
-    padding: 0em;
+    padding: 6em 0em;
     .about-description__yellow {
       display: block;
       width: 100%;
@@ -112,7 +115,6 @@
   .about-company {
     @include mixins.flex-box(space-between, center, row, wrap);
     gap: 1em;
-    padding: 1em 1em;
   
     .about--illustration__large {
       width: 15%;

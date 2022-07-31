@@ -667,7 +667,9 @@ a {
   }
 }
 .hero-section {
-  padding: 4em;
+  width: 100%;
+  position: static;
+  padding: 7em;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/hero-bg2.jpg) no-repeat center center/cover;
 }
@@ -681,7 +683,6 @@ a {
   color: white;
 }
 .hero-section button {
-  margin: 4em 0em;
   background-color: #158A43;
   color: #FFDF2B;
   font-size: 1.5rem;
@@ -695,7 +696,7 @@ a {
 @media screen and (max-width: 600px) {
   .hero-section {
     width: 100%;
-    padding: 2em 1em;
+    padding: 7em 1em;
   }
   .hero-section p {
     color: white;
@@ -710,13 +711,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     gap: 1em;
-    margin: 0em;
+    margin-top: 2em;
   }
   .hero-section .hero-buttons button {
-    width: 100%;
     cursor: pointer;
     background-color: #158A43;
     color: #FFDF2B;
@@ -756,6 +756,8 @@ footer {
 .navigation-bar {
   color: #FFDF2B;
   background-color: #158A43;
+  position: fixed;
+  width: 100%;
 }
 .navigation-bar .navbar-flex {
   display: flex;
@@ -795,6 +797,9 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .navigation-flex ul:hover {
+    display: block;
+  }
   .navigation-bar-left ul li:not(:first-child) {
     display: none;
   }
@@ -815,7 +820,9 @@ footer {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 2em 0em;
+  padding-top: 8em;
+  padding-bottom: 0em;
+  position: static;
 }
 .about-description .about-description__yellow {
   flex: 1;
@@ -898,7 +905,7 @@ footer {
 @media screen and (max-width: 600px) {
   .about-description {
     display: block;
-    padding: 0em;
+    padding: 6em 0em;
   }
   .about-description .about-description__yellow {
     display: block;
@@ -927,7 +934,6 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1em;
-    padding: 1em 1em;
   }
   .about-company .about--illustration__large {
     width: 15%;
