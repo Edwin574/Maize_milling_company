@@ -2,29 +2,58 @@
 @use "../overalstyles/mixins";
 @use "../overalstyles/variables" as *;
 
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 .navigation-bar {
   color: $yellow;
   background-color: $green;
-  position: fixed;
+
   width: 100%;
+  padding: .4em 0em;
+
   .navbar-flex {
     @include mixins.flex-box(space-between, center, row, nowrap);
     font-weight: bolder;
+
   }
+
   button {
     @extend %button;
     border-radius: 20px;
     border: none;
     background-color: $yellow;
+
     &:hover {
       background-color: rgb(255, 255, 0.7);
     }
   }
+
   a {
     color: $yellow;
     text-decoration: none;
+
     &:hover {
       color: $white;
+    }
+  }
+
+  .humberger-icon {
+    display: none;
+    cursor: pointer;
+
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: $yellow;
     }
   }
 }
@@ -33,48 +62,69 @@
   @extend %listitems;
   @include mixins.flex-box(space-between, center, row, nowrap);
   gap: 1em;
-  
+
 }
+
 .navigation-bar-left {
   .navbar-left-logo {
     @extend %company-logo;
   }
-  
+
 }
-.navigation-bar-right{
+
+.navigation-bar-right {
   ul {
-    li{
-      &:last-child{
-        display: none;
-      }
-    }
+    gap: 2em;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .navigation-bar {
 
-  .navigation-flex{
-    ul:hover{
+    .humberger-icon {
       display: block;
-    }
-  }
-  .navigation-bar-left {
-    ul {
-      li{
-        &:not(:first-child){
-          display: none;
+
+      .humberger-icon.active {
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+
+        }
+
+        &:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
         }
       }
     }
   }
+
   .navigation-bar-right {
+    display: none;
+    position: fixed;
+    // left: -100%;
+    top: 70px;
+    gap: 0;
+    // // background-color: green;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+
+    .active {
+      left: 0;
+    }
+
     ul {
-      li{
-        display: none;
-        &:last-child{
-          display: block;
-        }
+      display: flex;
+      flex-direction: column;
+
+      li {
+        margin: 1em 0;
       }
     }
+
   }
+
 }

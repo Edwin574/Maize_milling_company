@@ -6,12 +6,15 @@
 .contact-main-section {
   font-weight: bolder;
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../images/selling-background.jpg") no-repeat center center/cover;
-
+  // background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("../images/selling-background.jpg") no-repeat center center/cover;
+  background-color: gold;
+  // position: absolute;
 }
 
 .contact-main-section--address {
-  @include mixins.flex-box(space-around, center, row, wrap);
+  @include mixins.flex-box(space-around, center,column, nowrap);
+  border: 2px solid black;
+  background-color: $green;
 
   .contact--physical-address {
     text-align: center;
